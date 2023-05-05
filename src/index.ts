@@ -14,6 +14,7 @@ interface Product {
   dimensions: string[];
   exclusives: string[];
   options: string[];
+  isOption: boolean;
 }
 
 function getTensor(catalog: CatalogSpec, name: string | undefined) {
@@ -104,7 +105,11 @@ function formatCart(): string {
 // Product generation
 //
 ///////////////////////////////////////////////////////////////////////////////
-function toProduct(catalog: CatalogSpec, group: GroupSpec): Product {
+function toProduct(
+  catalog: CatalogSpec,
+  group: GroupSpec,
+  isOption: boolean
+): Product {
   if (!group.tags || group.tags.length !== 1) {
     throw new Error('Expect exactly one tag.');
   }
@@ -127,21 +132,22 @@ function toProduct(catalog: CatalogSpec, group: GroupSpec): Product {
   }
   const exclusives: string[] = [];
   const options: string[] = [];
-  return {name, values, dimensions, exclusives, options};
+  return {name, values, dimensions, exclusives, options, isOption};
 }
 
 function* generateProducts(
   catalog: CatalogSpec,
-  groups: GroupSpec[]
+  groups: GroupSpec[],
+  isOption = false
 ): Generator<Product> {
   for (const group of groups) {
     if (group.type === 'option') {
       if ('items' in group) {
-        yield* generateProducts(catalog, group.items);
+        yield* generateProducts(catalog, group.items, true);
       }
     } else if ('items' in group) {
       if (group.tags) {
-        yield toProduct(catalog, group);
+        yield toProduct(catalog, group, isOption);
       } else {
         console.log('skip');
       }
@@ -198,7 +204,9 @@ function go() {
   lines.push(formatCart());
   lines.push('');
 
-  const topLevel = toTypeUnion([...products.values()].map(p => p.name));
+  const topLevel = toTypeUnion(
+    [...products.values()].filter(p => !p.isOption).map(p => p.name)
+  );
   lines.push(`type Product = ${topLevel}`);
   lines.push('');
 

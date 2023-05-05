@@ -1,4 +1,4 @@
-* Product vs option
+* x Product vs option
 * BakeryOptions and BakeryPrepartions
 * console.log('skip')
 * Sorting?
