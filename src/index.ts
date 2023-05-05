@@ -7,13 +7,6 @@ import {
   loadCatalogFile,
 } from 'prix-fixe';
 
-interface GroupInfo {
-  tag: string;
-  parent: GroupSpec;
-  children: ItemSpec[];
-  isOption: boolean;
-}
-
 interface Product {
   name: string;
   values: string[];
@@ -50,6 +43,13 @@ function toTypeName(name: string) {
     .join('');
 }
 
+function toPropertyName(name: string) {
+  return name
+    .split(/[-_]/)
+    .map((x, i) => (i === 0 ? x[0] : x[0].toUpperCase()) + x.slice(1))
+    .join('');
+}
+
 function toStringLiteralUnion(names: string[]) {
   return names.map(n => JSON.stringify(n)).join(' | ');
 }
@@ -64,73 +64,44 @@ function formatDimension(dimension: DimensionSpec) {
   )};`;
 }
 
-function formatDimensions(catalog: CatalogSpec) {
+function formatDimensions(catalog: CatalogSpec): string {
+  const lines: string[] = [];
   for (const d of catalog.dimensions) {
-    console.log(formatDimension(d));
-    console.log();
+    lines.push(formatDimension(d));
+    lines.push('');
   }
+  return lines.join('\n');
 }
 
-function formatProduct(catalog: CatalogSpec, product: Product) {
-  console.log(`interface ${toTypeName(product.name)} {`);
-  console.log(
+function formatProduct(catalog: CatalogSpec, product: Product): string {
+  const lines: string[] = [];
+  lines.push(`interface ${toTypeName(product.name)} {`);
+  lines.push(
     `  name: ${product.values.map(x => JSON.stringify(x)).join(' | ')};`
   );
   if (product.dimensions.length > 0) {
     for (const dimensionName of product.dimensions) {
-      console.log(`  ${dimensionName}: ${toTypeName(dimensionName)};`);
+      lines.push(
+        `  ${toPropertyName(dimensionName)}?: ${toTypeName(dimensionName)};`
+      );
+    }
+  }
+  if (product.exclusives.length > 0) {
+    for (const exclusive of product.exclusives) {
+      lines.push(`  ${toPropertyName(exclusive)}?: ${toTypeName(exclusive)};`);
     }
   }
   if (product.options.length > 0) {
-    console.log(`  options: (${toTypeUnion(product.options)})[]`);
+    lines.push(`  options: (${toTypeUnion(product.options)})[];`);
   }
-  console.log('}\n');
-}
-
-function formatGroupInfo(catalog: CatalogSpec, info: GroupInfo) {
-  console.log(`interface ${toTypeName(info.tag)} {`);
-  console.log(
-    `  name: ${info.children.map(x => JSON.stringify(x.name)).join(' | ')};`
-  );
-  if (info.parent.tensor && info.parent.tensor !== 'none') {
-    // console.log(`  dimensions: ${JSON.stringify(info.parent.tensor)}`);
-
-    const tensor = getTensor(catalog, info.parent.tensor);
-    if (tensor) {
-      for (const dimensionName of tensor.dimensions) {
-        console.log(`  ${dimensionName}: ${toTypeName(dimensionName)};`);
-        // const dimension = getDimension(catalog, dimensionName);
-        // if (dimension) {
-        //   const values = dimension.attributes
-        //     .map(a => JSON.stringify(a.name))
-        //     .join(' | ');
-        //   console.log(`    ${dimensionName}: ${values}`);
-        // }
-      }
-    }
-  }
-
-  // const tensorName = info.parent.tensor;
-  // if (tensorName) {
-  //   for (const t of catalog.tensors) {
-  //     if (t.name === tensorName) {
-  //       for (const dimensionName of t.dimensions) {
-  //         console.log(`    ${dimensionName}:`);
-  //       }
-  //     }
-  //   }
-  // }
-  console.log('}\n');
+  lines.push('}');
+  return lines.join('\n');
 }
 
 function toProduct(catalog: CatalogSpec, group: GroupSpec): Product {
   if (!group.tags || group.tags.length !== 1) {
     throw new Error('Expect exactly one tag.');
   }
-
-  // if (!group.tensor) {
-  //   throw new Error('Missing tensor.');
-  // }
 
   if (!('items' in group)) {
     throw new Error('Expected `items` field.');
@@ -187,6 +158,20 @@ function go() {
   }
 
   for (const rule of catalog.rules) {
+    if ('exclusive' in rule) {
+      for (const parent of rule.parents) {
+        const product = products.get(parent);
+        if (!product) {
+          throw new Error(`Unknown product "${parent}".`);
+        }
+        for (const child of rule.exclusive) {
+          product.exclusives.push(child);
+        }
+      }
+    }
+  }
+
+  for (const rule of catalog.rules) {
     if ('children' in rule) {
       for (const parent of rule.parents) {
         const product = products.get(parent);
@@ -194,17 +179,35 @@ function go() {
           throw new Error(`Unknown product "${parent}".`);
         }
         for (const child of rule.children) {
-          product.options.push(child);
+          if (!product.exclusives.includes(child)) {
+            product.options.push(child);
+          }
         }
       }
     }
+    //  else if ('exclusive' in rule) {
+    //   for (const parent of rule.parents) {
+    //     const product = products.get(parent);
+    //     if (!product) {
+    //       throw new Error(`Unknown product "${parent}".`);
+    //     }
+    //     for (const child of rule.exclusive) {
+    //       product.exclusives.push(child);
+    //     }
+    //   }
+    // }
   }
 
-  formatDimensions(catalog);
-
+  const lines: string[] = [];
   for (const product of products.values()) {
-    formatProduct(catalog, product);
+    lines.push(formatProduct(catalog, product));
+    lines.push('');
   }
+
+  lines.push(formatDimensions(catalog));
+
+  const text = lines.join('\n');
+  console.log(text);
 
   //   const world = createWorld(dataPath);
   //   console.log(JSON.stringify(world, null, 2));
