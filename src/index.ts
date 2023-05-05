@@ -96,7 +96,7 @@ function formatProduct(catalog: CatalogSpec, product: Product): string {
 function formatCart(): string {
   return `interface Cart { items: ItemInstance[]; }
 
-          interface ItemInstace { item: Product; quantity: number; }
+          interface ItemInstance { item: Product; quantity: number; }
           `;
 }
 
@@ -218,7 +218,7 @@ function go() {
   lines.push(formatDimensions(catalog));
 
   const text = lines.join('\n');
-  const formatted = prettier.format(text, {parser: 'babel'});
+  const formatted = prettier.format(text, {parser: 'babel', singleQuote: true});
   console.log(formatted);
 }
 
