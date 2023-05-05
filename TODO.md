@@ -1,3 +1,9 @@
+* here-or-to-go tagging
+* exclusives
+* pretty printing
+
+
+
 * Extensions
 * Code spaces
 * Steps
