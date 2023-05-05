@@ -1,4 +1,5 @@
 import path from 'path';
+import prettier from 'prettier';
 import {
   CatalogSpec,
   DimensionSpec,
@@ -15,18 +16,6 @@ interface Product {
   options: string[];
 }
 
-function getDimension(
-  catalog: CatalogSpec,
-  name: string | undefined
-): DimensionSpec | undefined {
-  for (const d of catalog.dimensions) {
-    if (d.name === name) {
-      return d;
-    }
-  }
-  return undefined;
-}
-
 function getTensor(catalog: CatalogSpec, name: string | undefined) {
   for (const t of catalog.tensors) {
     if (t.name === name) {
@@ -36,6 +25,11 @@ function getTensor(catalog: CatalogSpec, name: string | undefined) {
   return undefined;
 }
 
+///////////////////////////////////////////////////////////////////////////////
+//
+// Product formatting
+//
+///////////////////////////////////////////////////////////////////////////////
 function toTypeName(name: string) {
   return name
     .split(/[-_]/)
@@ -98,6 +92,18 @@ function formatProduct(catalog: CatalogSpec, product: Product): string {
   return lines.join('\n');
 }
 
+function formatCart(): string {
+  return `interface Cart { items: ItemInstance[]; }
+
+          interface ItemInstace { item: Product; quantity: number; }
+          `;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//
+// Product generation
+//
+///////////////////////////////////////////////////////////////////////////////
 function toProduct(catalog: CatalogSpec, group: GroupSpec): Product {
   if (!group.tags || group.tags.length !== 1) {
     throw new Error('Expect exactly one tag.');
@@ -185,20 +191,17 @@ function go() {
         }
       }
     }
-    //  else if ('exclusive' in rule) {
-    //   for (const parent of rule.parents) {
-    //     const product = products.get(parent);
-    //     if (!product) {
-    //       throw new Error(`Unknown product "${parent}".`);
-    //     }
-    //     for (const child of rule.exclusive) {
-    //       product.exclusives.push(child);
-    //     }
-    //   }
-    // }
   }
 
   const lines: string[] = [];
+
+  lines.push(formatCart());
+  lines.push('');
+
+  const topLevel = toTypeUnion([...products.values()].map(p => p.name));
+  lines.push(`type Product = ${topLevel}`);
+  lines.push('');
+
   for (const product of products.values()) {
     lines.push(formatProduct(catalog, product));
     lines.push('');
@@ -207,10 +210,8 @@ function go() {
   lines.push(formatDimensions(catalog));
 
   const text = lines.join('\n');
-  console.log(text);
-
-  //   const world = createWorld(dataPath);
-  //   console.log(JSON.stringify(world, null, 2));
+  const formatted = prettier.format(text, {parser: 'babel'});
+  console.log(formatted);
 }
 
 go();

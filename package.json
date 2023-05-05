@@ -21,10 +21,12 @@
   },
   "devDependencies": {
     "@types/node": "^14.11.2",
+    "@types/prettier": "^2.7.2",
     "gts": "^3.1.1",
     "typescript": "~4.7.0"
   },
   "dependencies": {
+    "prettier": "^2.8.8",
     "prix-fixe": "^0.0.68"
   }
 }

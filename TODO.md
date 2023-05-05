@@ -1,6 +1,10 @@
+* Product vs option
+* BakeryOptions and BakeryPrepartions
+* console.log('skip')
+* Sorting?
 * here-or-to-go tagging
-* exclusives
-* pretty printing
+* x exclusives
+* x pretty printing
 
 
 
