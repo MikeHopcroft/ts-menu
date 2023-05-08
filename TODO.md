@@ -1,3 +1,4 @@
+* Espressos shouldn't have Milks
 * x Product vs option
 * BakeryOptions and BakeryPrepartions
 * console.log('skip')

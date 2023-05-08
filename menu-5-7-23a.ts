@@ -10,26 +10,20 @@ interface ItemInstance {
 type Product = BakeryProducts | LatteDrinks | EspressoDrinks | CoffeeDrinks;
 
 interface BakeryProducts {
-  type: 'BakeryProducts';
   name: 'apple bran muffin' | 'blueberry muffin' | 'lemon poppyseed muffin';
   options: (BakeryOptions | BakeryPreparations)[];
 }
 
 interface BakeryOptions {
-  type: 'BakeryOptions';
   name: 'butter' | 'strawberry jam';
-  configuration: {
-    optionQuantity?: OptionQuantity;
-  };
+  optionQuantity?: OptionQuantity;
 }
 
 interface BakeryPreparations {
-  type: 'BakeryPreparations';
   name: 'warmed' | 'cut in half';
 }
 
 interface LatteDrinks {
-  type: 'LatteDrinks';
   name:
     | 'cappuccino'
     | 'flat white'
@@ -37,10 +31,10 @@ interface LatteDrinks {
     | 'latte macchiato'
     | 'mocha'
     | 'chai latte';
-  configuration: {
-    coffeeTemperature?: CoffeeTemperature;
-    coffeeSize?: CoffeeSize;
-  };
+  coffeeTemperature?: CoffeeTemperature;
+  coffeeSize?: CoffeeSize;
+  milks?: Milks;
+  caffeines?: Caffeines;
   options: (
     | Milks
     | Sweeteners
@@ -52,12 +46,11 @@ interface LatteDrinks {
 }
 
 interface EspressoDrinks {
-  type: 'EspressoDrinks';
   name: 'espresso' | 'lungo' | 'ristretto' | 'macchiato';
-  configuration: {
-    coffeeTemperature?: CoffeeTemperature;
-    espressoSize?: EspressoSize;
-  };
+  coffeeTemperature?: CoffeeTemperature;
+  espressoSize?: EspressoSize;
+  milks?: Milks;
+  caffeines?: Caffeines;
   options: (
     | Caffeines
     | LattePreparations
@@ -69,12 +62,11 @@ interface EspressoDrinks {
 }
 
 interface CoffeeDrinks {
-  type: 'CoffeeDrinks';
   name: 'americano' | 'dark roast coffee';
-  configuration: {
-    coffeeTemperature?: CoffeeTemperature;
-    coffeeSize?: CoffeeSize;
-  };
+  coffeeTemperature?: CoffeeTemperature;
+  coffeeSize?: CoffeeSize;
+  milks?: Milks;
+  caffeines?: Caffeines;
   options: (
     | Caffeines
     | LattePreparations
@@ -86,7 +78,6 @@ interface CoffeeDrinks {
 }
 
 interface Syrups {
-  type: 'Syrups';
   name:
     | 'almond syrup'
     | 'buttered rum syrup'
@@ -98,18 +89,14 @@ interface Syrups {
     | 'raspberry syrup'
     | 'toffee syrup'
     | 'vanilla syrup';
-  configuration: {
-    optionQuantity?: OptionQuantity;
-  };
+  optionQuantity?: OptionQuantity;
 }
 
 interface Caffeines {
-  type: 'Caffeines';
   name: 'regular' | 'two thirds caf' | 'half caf' | 'one third caf' | 'decaf';
 }
 
 interface Milks {
-  type: 'Milks';
   name:
     | 'whole milk'
     | 'two percent milk'
@@ -123,7 +110,6 @@ interface Milks {
 }
 
 interface Creamers {
-  type: 'Creamers';
   name:
     | 'whole milk creamer'
     | 'two percent milk creamer'
@@ -139,20 +125,15 @@ interface Creamers {
 }
 
 interface Toppings {
-  type: 'Toppings';
   name: 'cinnamon' | 'foam' | 'ice' | 'nutmeg' | 'whipped cream' | 'water';
-  configuration: {
-    optionQuantity?: OptionQuantity;
-  };
+  optionQuantity?: OptionQuantity;
 }
 
 interface LattePreparations {
-  type: 'LattePreparations';
   name: 'for here cup' | 'lid' | 'with room' | 'to go' | 'dry' | 'wet';
 }
 
 interface Sweeteners {
-  type: 'Sweeteners';
   name:
     | 'equal'
     | 'honey'
@@ -161,9 +142,7 @@ interface Sweeteners {
     | 'sugar in the raw'
     | 'sweet n low'
     | 'espresso shot';
-  configuration: {
-    optionQuantity?: OptionQuantity;
-  };
+  optionQuantity?: OptionQuantity;
 }
 
 type CoffeeTemperature = 'hot' | 'iced';
