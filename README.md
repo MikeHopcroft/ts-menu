@@ -6,7 +6,7 @@ This code generates TypeScript types from [prix-fixe](https://www.npmjs.com/pack
 
 You can build and run this code locally, but we recommend [GitHub Codespaces](https://docs.github.com/en/codespaces/overview).
 
-Once you have your development environment configured, build the code with `npm run build` or `tsc --watch`.
+Once you have your development environment configured, build the code with `npm run compile` or `tsc --watch`.
 
 Run the script with `node build/src/index.js`. This code will read the menu at `samples/menu/menu.yaml` and print Typescript to standard out.
 
