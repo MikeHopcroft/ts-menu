@@ -1,9 +1,9 @@
-* Espressos shouldn't have Milks
+* x Espressos shouldn't have Milks
 * x Product vs option
-* BakeryOptions and BakeryPrepartions
+* x BakeryOptions and BakeryPrepartions
 * console.log('skip')
 * Sorting?
-* here-or-to-go tagging
+* x here-or-to-go tagging
 * x exclusives
 * x pretty printing
 

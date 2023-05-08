@@ -110,11 +110,7 @@ function formatProduct2(catalog: CatalogSpec, product: Product): string {
     }
     lines.push('  };');
   }
-  // if (product.exclusives.length > 0) {
-  //   for (const exclusive of product.exclusives) {
-  //     lines.push(`  ${toPropertyName(exclusive)}?: ${toTypeName(exclusive)};`);
-  //   }
-  // }
+
   if (product.options.length > 0) {
     lines.push(`  options: (${toTypeUnion(product.options)})[];`);
   }
@@ -228,26 +224,6 @@ function applyRule(
       f(parent, child);
     }
   }
-
-  // const parentProducts = new Set<Product>();
-  // for (const parent of parentTags) {
-  //   const x = tagToProductSet.get(parent);
-  //   if (x) {
-  //     for (const y of x.values()) {
-  //       parentProducts.add(y);
-  //     }
-  //   }
-  // }
-
-  // const childProducts = new Set<Product>();
-  // for (const child of childTags) {
-  //   const x = tagToProductSet.get(child);
-  //   if (x) {
-  //     for (const y of x.values()) {
-  //       childProducts.add(y);
-  //     }
-  //   }
-  // }
 }
 
 function go() {
@@ -276,17 +252,7 @@ function go() {
     }
   }
 
-  // for (const product of generateProducts(catalog, catalog.catalog)) {
-  //   for (const tag of product.tags) {
-  //     const items = tags.get(tag);
-  //     if (items) {
-  //       items.add(product);
-  //     } else {
-  //       tags.set(tag, new Set([product]));
-  //     }
-  //   }
-  // }
-
+  // Apply exclusivity rules
   for (const rule of catalog.rules) {
     if ('exclusive' in rule) {
       applyRule(
@@ -297,18 +263,10 @@ function go() {
           parent.exclusives.push(child.name);
         }
       );
-      // for (const parent of rule.parents) {
-      //   const product = products.get(parent);
-      //   if (!product) {
-      //     throw new Error(`Unknown product "${parent}".`);
-      //   }
-      //   for (const child of rule.exclusive) {
-      //     product.exclusives.push(child);
-      //   }
-      // }
     }
   }
 
+  // Apply parent-child rules
   for (const rule of catalog.rules) {
     if ('children' in rule) {
       applyRule(
@@ -316,42 +274,35 @@ function go() {
         rule.parents,
         rule.children,
         (parent, child) => {
-          // console.log(`parent: "${parent.name}", child: "${child.name}"`);
           parent.options.push(child.name);
         }
       );
-      // for (const parent of rule.parents) {
-      //   const product = products.get(parent);
-      //   if (!product) {
-      //     throw new Error(`Unknown product "${parent}".`);
-      //   }
-      //   for (const child of rule.children) {
-      //     if (!product.exclusives.includes(child)) {
-      //       product.options.push(child);
-      //     }
-      //   }
-      // }
     }
   }
 
   const lines: string[] = [];
 
+  // Boilerplate definition of Cart and ItemInstance.
   lines.push(formatCart());
   lines.push('');
 
+  // type Product = A | B | ... ;
   const topLevel = toTypeUnion(
     [...products.values()].filter(p => !p.isOption).map(p => p.name)
   );
   lines.push(`type Product = ${topLevel}`);
   lines.push('');
 
+  // Interfaces for each Product and Option.
   for (const product of products.values()) {
     lines.push(formatProduct2(catalog, product));
     lines.push('');
   }
 
+  // Type aliases for configuration dimensions.
   lines.push(formatDimensions(catalog));
 
+  // Create source code and format.
   const text = lines.join('\n');
   const formatted = prettier.format(text, {
     parser: 'typescript',
