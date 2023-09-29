@@ -173,4 +173,3 @@ type CoffeeSize = 'short' | 'tall' | 'grande' | 'venti';
 type EspressoSize = 'solo' | 'doppio' | 'triple' | 'quad';
 
 type OptionQuantity = 'no' | 'light' | 'regular' | 'extra';
-
