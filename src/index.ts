@@ -487,7 +487,10 @@ function applyRule(
   }
 }
 
-function go() {
+function generateTypeScript(): {
+  catalog: CatalogSpec;
+  nameToProduct: Map<string, Product>;
+} {
   const dataPath = 'samples/menu';
   const catalog = loadCatalogFile(path.join(dataPath, 'menu.yaml'));
 
@@ -541,7 +544,13 @@ function go() {
     }
   }
 
-  runTests(nameToProduct);
+  return {catalog, nameToProduct};
+}
+
+function go() {
+  const {catalog, nameToProduct} = generateTypeScript();
+
+  // runTests(nameToProduct);
 
   formatInterfaces(catalog, nameToProduct);
   //   const lines: string[] = [];

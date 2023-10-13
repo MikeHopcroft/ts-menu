@@ -1,3 +1,11 @@
+* Name for LLMCart
+* Translate
+  * prix-fixe Cart => LLMCart
+  * LLMCart => prix-fixe cart
+* LLMProcessor
+  * Templated by LLMCart type
+
+
 * x Espressos shouldn't have Milks
 * x Product vs option
 * x BakeryOptions and BakeryPrepartions
