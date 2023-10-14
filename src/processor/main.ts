@@ -1,20 +1,25 @@
 import {
-  TestProcessors,
-  testRunnerMain,
-  State,
-  World,
-  loadLogicalTestSuite,
-  TextTurn,
-  LogicalTestSuite,
-  LogicalValidationSuite,
   cartFromlogicalCart,
-  CatalogSpec,
+  // CatalogSpec,
   ICatalog,
-  createWorld,
+  // createWorld,
+  // loadLogicalTestSuite,
   loadLogicalValidationSuite,
+  // LogicalTestSuite,
+  LogicalValidationSuite,
+  NopLogger,
+  State,
+  TestProcessors,
+  TestRunnerApplication,
+  testRunnerMain,
+  TextTurn,
+  World,
 } from 'prix-fixe';
 
-import {Cart as LLMCart} from './menu';
+import {PrixFixeToLLM} from './llmToPrixFixe';
+import {worker} from 'cluster';
+import {createLLMProducts} from './llmCatalog';
+// import {Cart as LLMCart} from './menu';
 
 // This sample application demonstrates how to configure the test runner
 // with a set of Processors.
@@ -44,13 +49,19 @@ async function nopThrowProcessor(text: string, state: State): Promise<State> {
 }
 
 function createCheatProcessorFactory(suite: LogicalValidationSuite<TextTurn>) {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   return (w: World, d: string) => {
+    const converter = new PrixFixeToLLM(w);
     const states = expectedStates(w.catalog, suite);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     return async (text: string, state: State): Promise<State> => {
       const expected = states.next();
       if (expected.done) {
         throw new Error('Ran out of states');
       }
+      const s = expected.value;
+      converter.convertCart(s.cart);
+
       return expected.value;
     };
   };
@@ -69,13 +80,13 @@ function* expectedStates(
   }
 }
 
-function prixFixeCartToLLM(cart: Cart): LLMCart {
+// function prixFixeCartToLLM(cart: Cart): LLMCart {
 
-}
+// }
 
-function LLMCartToPrixFixe(cart: LLMCart): Cart {
+// function LLMCartToPrixFixe(cart: LLMCart): Cart {
 
-}
+// }
 
 async function go() {
   // const world = createWorld('samples/menu');
@@ -112,7 +123,27 @@ async function go() {
     },
   ]);
 
+  const config = getConfig();
+  const products = createLLMProducts(config.dataPath);
+  // console.log(JSON.stringify([...products.nameToProduct.entries()], null, 2));
+
   testRunnerMain('Demo', processorFactory);
+}
+
+function getConfig(): {dataPath: string} {
+  const processorFactory = new TestProcessors([
+    {
+      name: 'nop',
+      description: 'does nothing',
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      create: (w: World, d: string) => nopProcessor,
+    },
+  ]);
+  const logger = new NopLogger();
+  const app = new TestRunnerApplication('tempory', processorFactory, logger);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const config = (app as any).processArguments(process.argv);
+  return config;
 }
 
 go();

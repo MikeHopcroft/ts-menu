@@ -118,6 +118,7 @@ function runTests(nameToProduct: Map<string, Product>) {
     }
   }
 }
+
 class Diagnostics {
   lines: string[] = [];
 
@@ -267,6 +268,7 @@ function validateProduct(
   // mutual exclusivity
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function verifyField(
   obj: any,
   name: string,
@@ -553,6 +555,16 @@ function go() {
   // runTests(nameToProduct);
 
   formatInterfaces(catalog, nameToProduct);
+
+  for (const [name, product] of nameToProduct.entries()) {
+    console.log(`${product.values.join(', ')} => ${product.name}`);
+  }
+
+  const table = [...nameToProduct.entries()].map(([name, product]) => [
+    product.name,
+    product.values,
+  ]);
+  console.log(JSON.stringify(table, null, 2));
   //   const lines: string[] = [];
 
   //   // Boilerplate definition of Cart and ItemInstance.
