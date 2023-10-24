@@ -16,8 +16,7 @@ import {
   World,
 } from 'prix-fixe';
 
-import {PrixFixeToLLM} from './llmToPrixFixe';
-import {worker} from 'cluster';
+import {LLMToPrixFixe, PrixFixeToLLM} from './llmToPrixFixe';
 import {createLLMProducts} from './llmCatalog';
 // import {Cart as LLMCart} from './menu';
 
@@ -48,21 +47,30 @@ async function nopThrowProcessor(text: string, state: State): Promise<State> {
   }
 }
 
-function createCheatProcessorFactory(suite: LogicalValidationSuite<TextTurn>) {
+function createCheatProcessorFactory(
+  suite: LogicalValidationSuite<TextTurn>,
+  genericNameToTag: Map<string, string>
+) {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   return (w: World, d: string) => {
-    const converter = new PrixFixeToLLM(w);
+    console.log('===============================');
+    console.log(d);
+    const converter = new PrixFixeToLLM(w, genericNameToTag);
+    const converter2 = new LLMToPrixFixe(w);
     const states = expectedStates(w.catalog, suite);
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     return async (text: string, state: State): Promise<State> => {
+      console.log(text);
       const expected = states.next();
       if (expected.done) {
         throw new Error('Ran out of states');
       }
       const s = expected.value;
-      converter.convertCart(s.cart);
+      const llmCart = converter.convertCart(s.cart);
+      const pfCart = converter2.convertCart(llmCart);
 
-      return expected.value;
+      return {cart: pfCart};
+      // return expected.value;
     };
   };
 }
@@ -90,10 +98,18 @@ function* expectedStates(
 
 async function go() {
   // const world = createWorld('samples/menu');
+  const config = getConfig();
+  const {genericNameToTag} = createLLMProducts(config.dataPath);
+  // console.log(JSON.stringify([...genericNameToTag.entries()], null, 2));
+  // console.log(JSON.stringify([...products.nameToProduct.entries()], null, 2));
+
   const suite = loadLogicalValidationSuite<TextTurn>(
     'samples/tests/baseline.yaml'
   );
-  const cheatProcessorFactory = createCheatProcessorFactory(suite);
+  const cheatProcessorFactory = createCheatProcessorFactory(
+    suite,
+    genericNameToTag
+  );
 
   // Define the processor factory.
   const processorFactory = new TestProcessors([
@@ -122,10 +138,6 @@ async function go() {
       create: (w: World, d: string) => nopThrowProcessor,
     },
   ]);
-
-  const config = getConfig();
-  const products = createLLMProducts(config.dataPath);
-  // console.log(JSON.stringify([...products.nameToProduct.entries()], null, 2));
 
   testRunnerMain('Demo', processorFactory);
 }

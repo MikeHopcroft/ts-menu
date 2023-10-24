@@ -1,0 +1,11023 @@
+Demo test runner
+10/23/2023, 9:00:27 PM
+data path = samples/menu
+Test files:
+  samples/tests/baseline.yaml
+Reading samples/tests/baseline.yaml
+Running all tests.
+===============================
+samples/menu
+processor = cheat
+ 
+i'd like a latte that's it
+0: ===============================
+{
+  "items": [
+    {
+      "uid": 1,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 1
+    }
+  ]
+}
+i'll have a dark roast coffee thank you
+1: ===============================
+{
+  "items": [
+    {
+      "uid": 2,
+      "quantity": 1,
+      "key": "501:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "CoffeeDrinks",
+        "name": "dark roast coffee",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "501:0:2",
+      "quantity": 1,
+      "uid": 2
+    }
+  ]
+}
+get me a coffee please
+2: ===============================
+{
+  "items": [
+    {
+      "uid": 3,
+      "quantity": 1,
+      "key": "501:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "CoffeeDrinks",
+        "name": "dark roast coffee",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "501:0:2",
+      "quantity": 1,
+      "uid": 3
+    }
+  ]
+}
+could i please get two mochas that's all
+3: ===============================
+{
+  "items": [
+    {
+      "uid": 4,
+      "quantity": 2,
+      "key": "304:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "mocha",
+        "quantity": 2,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 2
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "304:0:2",
+      "quantity": 2,
+      "uid": 4
+    }
+  ]
+}
+we need twenty five flat whites and that'll do it
+4: ===============================
+{
+  "items": [
+    {
+      "uid": 5,
+      "quantity": 25,
+      "key": "301:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "flat white",
+        "quantity": 25,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 25
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "301:0:2",
+      "quantity": 25,
+      "uid": 5
+    }
+  ]
+}
+how about a tall cappuccino
+5: ===============================
+{
+  "items": [
+    {
+      "uid": 6,
+      "quantity": 1,
+      "key": "300:0:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "cappuccino",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "tall",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "300:0:1",
+      "quantity": 1,
+      "uid": 6
+    }
+  ]
+}
+i'd like a venti iced latte
+6: ===============================
+{
+  "items": [
+    {
+      "uid": 7,
+      "quantity": 1,
+      "key": "302:1:3",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "venti",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:1:3",
+      "quantity": 1,
+      "uid": 7
+    }
+  ]
+}
+i'd like a iced venti latte
+7: ===============================
+{
+  "items": [
+    {
+      "uid": 8,
+      "quantity": 1,
+      "key": "302:1:3",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "venti",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:1:3",
+      "quantity": 1,
+      "uid": 8
+    }
+  ]
+}
+i'd like a venti latte iced
+8: ===============================
+{
+  "items": [
+    {
+      "uid": 9,
+      "quantity": 1,
+      "key": "302:1:3",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "venti",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:1:3",
+      "quantity": 1,
+      "uid": 9
+    }
+  ]
+}
+i'd like a latte iced venti
+9: ===============================
+{
+  "items": [
+    {
+      "uid": 10,
+      "quantity": 1,
+      "key": "302:1:3",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "venti",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:1:3",
+      "quantity": 1,
+      "uid": 10
+    }
+  ]
+}
+we'll also have a short tall latte
+10: ===============================
+{
+  "items": [
+    {
+      "uid": 11,
+      "quantity": 1,
+      "key": "302:0:0",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "short",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:0",
+      "quantity": 1,
+      "uid": 11
+    }
+  ]
+}
+i wanna latte macchiato with vanilla
+11: ===============================
+{
+  "items": [
+    {
+      "uid": 12,
+      "quantity": 1,
+      "key": "303:0:2",
+      "children": [
+        {
+          "uid": 13,
+          "quantity": 1,
+          "key": "609:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte macchiato",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Syrups",
+            "name": "vanilla syrup",
+            "quantity": 1,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "609:2",
+          "quantity": 1,
+          "uid": 13
+        }
+      ],
+      "key": "303:0:2",
+      "quantity": 1,
+      "uid": 12
+    }
+  ]
+}
+how about a peppermint latte
+12: ===============================
+{
+  "items": [
+    {
+      "uid": 14,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 15,
+          "quantity": 1,
+          "key": "606:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Syrups",
+            "name": "peppermint syrup",
+            "quantity": 1,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "606:2",
+          "quantity": 1,
+          "uid": 15
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 14
+    }
+  ]
+}
+may i also get a decaf soy vanilla syrup caramel latte with sugar and foam
+13: ===============================
+{
+  "items": [
+    {
+      "uid": 16,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 17,
+          "quantity": 1,
+          "key": "704",
+          "children": []
+        },
+        {
+          "uid": 18,
+          "quantity": 1,
+          "key": "805",
+          "children": []
+        },
+        {
+          "uid": 19,
+          "quantity": 1,
+          "key": "609:2",
+          "children": []
+        },
+        {
+          "uid": 20,
+          "quantity": 1,
+          "key": "602:2",
+          "children": []
+        },
+        {
+          "uid": 21,
+          "quantity": 1,
+          "key": "1203:2",
+          "children": []
+        },
+        {
+          "uid": 22,
+          "quantity": 1,
+          "key": "1001:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Caffeines",
+            "name": "decaf",
+            "quantity": 1
+          },
+          {
+            "type": "Milks",
+            "name": "soy milk",
+            "quantity": 1
+          },
+          {
+            "type": "Syrups",
+            "name": "vanilla syrup",
+            "quantity": 1,
+            "amount": "regular"
+          },
+          {
+            "type": "Syrups",
+            "name": "caramel syrup",
+            "quantity": 1,
+            "amount": "regular"
+          },
+          {
+            "type": "Sweeteners",
+            "name": "sugar",
+            "quantity": 1,
+            "amount": "regular"
+          },
+          {
+            "type": "Toppings",
+            "name": "foam",
+            "quantity": 1,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "704",
+          "quantity": 1,
+          "uid": 17
+        },
+        {
+          "children": [],
+          "key": "805",
+          "quantity": 1,
+          "uid": 18
+        },
+        {
+          "children": [],
+          "key": "609:2",
+          "quantity": 1,
+          "uid": 19
+        },
+        {
+          "children": [],
+          "key": "602:2",
+          "quantity": 1,
+          "uid": 20
+        },
+        {
+          "children": [],
+          "key": "1203:2",
+          "quantity": 1,
+          "uid": 21
+        },
+        {
+          "children": [],
+          "key": "1001:2",
+          "quantity": 1,
+          "uid": 22
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 16
+    }
+  ]
+}
+i want a latte with peppermint syrup with peppermint syrup
+14: ===============================
+{
+  "items": [
+    {
+      "uid": 23,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 24,
+          "quantity": 1,
+          "key": "606:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Syrups",
+            "name": "peppermint syrup",
+            "quantity": 1,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "606:2",
+          "quantity": 1,
+          "uid": 24
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 23
+    }
+  ]
+}
+i'd like a decaf half caf latte
+15: ===============================
+{
+  "items": [
+    {
+      "uid": 25,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 26,
+          "quantity": 1,
+          "key": "704",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Caffeines",
+            "name": "decaf",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "704",
+          "quantity": 1,
+          "uid": 26
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 25
+    }
+  ]
+}
+can I get a skim soy latte
+16: ===============================
+{
+  "items": [
+    {
+      "uid": 27,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 28,
+          "quantity": 1,
+          "key": "803",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Milks",
+            "name": "nonfat milk",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "803",
+          "quantity": 1,
+          "uid": 28
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 27
+    }
+  ]
+}
+i'd like a light nutmeg espresso that's it
+here
+17: ===============================
+{
+  "items": [
+    {
+      "uid": 29,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": [
+        {
+          "uid": 30,
+          "quantity": 1,
+          "key": "1003:1",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": [
+          {
+            "type": "Toppings",
+            "name": "nutmeg",
+            "quantity": 1,
+            "amount": "light"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1003:1",
+          "quantity": 1,
+          "uid": 30
+        }
+      ],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 29
+    }
+  ]
+}
+can i have an cappuccino no foam
+18: ===============================
+{
+  "items": [
+    {
+      "uid": 31,
+      "quantity": 1,
+      "key": "300:0:2",
+      "children": [
+        {
+          "uid": 32,
+          "quantity": 1,
+          "key": "1001:0",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "cappuccino",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Toppings",
+            "name": "foam",
+            "quantity": 1,
+            "amount": "no"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1001:0",
+          "quantity": 1,
+          "uid": 32
+        }
+      ],
+      "key": "300:0:2",
+      "quantity": 1,
+      "uid": 31
+    }
+  ]
+}
+can i have an espresso with no nutmeg
+19: ===============================
+{
+  "items": [
+    {
+      "uid": 33,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": [
+        {
+          "uid": 34,
+          "quantity": 1,
+          "key": "1003:0",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": [
+          {
+            "type": "Toppings",
+            "name": "nutmeg",
+            "quantity": 1,
+            "amount": "no"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1003:0",
+          "quantity": 1,
+          "uid": 34
+        }
+      ],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 33
+    }
+  ]
+}
+we want a light whipped no foam mocha with extra hazelnut and cinnamon
+20: ===============================
+{
+  "items": [
+    {
+      "uid": 35,
+      "quantity": 1,
+      "key": "304:0:2",
+      "children": [
+        {
+          "uid": 36,
+          "quantity": 1,
+          "key": "1004:1",
+          "children": []
+        },
+        {
+          "uid": 37,
+          "quantity": 1,
+          "key": "1001:0",
+          "children": []
+        },
+        {
+          "uid": 38,
+          "quantity": 1,
+          "key": "604:3",
+          "children": []
+        },
+        {
+          "uid": 39,
+          "quantity": 1,
+          "key": "603:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "mocha",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Toppings",
+            "name": "whipped cream",
+            "quantity": 1,
+            "amount": "light"
+          },
+          {
+            "type": "Toppings",
+            "name": "foam",
+            "quantity": 1,
+            "amount": "no"
+          },
+          {
+            "type": "Syrups",
+            "name": "hazelnut syrup",
+            "quantity": 1,
+            "amount": "extra"
+          },
+          {
+            "type": "Syrups",
+            "name": "cinnamon syrup",
+            "quantity": 1,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1004:1",
+          "quantity": 1,
+          "uid": 36
+        },
+        {
+          "children": [],
+          "key": "1001:0",
+          "quantity": 1,
+          "uid": 37
+        },
+        {
+          "children": [],
+          "key": "604:3",
+          "quantity": 1,
+          "uid": 38
+        },
+        {
+          "children": [],
+          "key": "603:2",
+          "quantity": 1,
+          "uid": 39
+        }
+      ],
+      "key": "304:0:2",
+      "quantity": 1,
+      "uid": 35
+    }
+  ]
+}
+i'd like a latte cut in half
+21: ===============================
+{
+  "items": [
+    {
+      "uid": 40,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 40
+    }
+  ]
+}
+i'd like a strawberry latte
+22: ===============================
+{
+  "items": [
+    {
+      "uid": 41,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 41
+    }
+  ]
+}
+i want a five pump caramel flat white
+23: ===============================
+{
+  "items": [
+    {
+      "uid": 42,
+      "quantity": 1,
+      "key": "301:0:2",
+      "children": [
+        {
+          "uid": 43,
+          "quantity": 5,
+          "key": "602:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "flat white",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Syrups",
+            "name": "caramel syrup",
+            "quantity": 5,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "602:2",
+          "quantity": 5,
+          "uid": 43
+        }
+      ],
+      "key": "301:0:2",
+      "quantity": 1,
+      "uid": 42
+    }
+  ]
+}
+i want a flat white with five pumps of caramel syrup
+24: ===============================
+{
+  "items": [
+    {
+      "uid": 44,
+      "quantity": 1,
+      "key": "301:0:2",
+      "children": [
+        {
+          "uid": 45,
+          "quantity": 5,
+          "key": "602:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "flat white",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Syrups",
+            "name": "caramel syrup",
+            "quantity": 5,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "602:2",
+          "quantity": 5,
+          "uid": 45
+        }
+      ],
+      "key": "301:0:2",
+      "quantity": 1,
+      "uid": 44
+    }
+  ]
+}
+i want a two pump peppermint three squirt raspberry skinny vanilla latte with a pump of caramel and two sugars
+25: ===============================
+{
+  "items": [
+    {
+      "uid": 46,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 47,
+          "quantity": 2,
+          "key": "606:2",
+          "children": []
+        },
+        {
+          "uid": 48,
+          "quantity": 3,
+          "key": "607:2",
+          "children": []
+        },
+        {
+          "uid": 49,
+          "quantity": 1,
+          "key": "803",
+          "children": []
+        },
+        {
+          "uid": 50,
+          "quantity": 1,
+          "key": "609:2",
+          "children": []
+        },
+        {
+          "uid": 51,
+          "quantity": 1,
+          "key": "602:2",
+          "children": []
+        },
+        {
+          "uid": 52,
+          "quantity": 2,
+          "key": "1203:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Syrups",
+            "name": "peppermint syrup",
+            "quantity": 2,
+            "amount": "regular"
+          },
+          {
+            "type": "Syrups",
+            "name": "raspberry syrup",
+            "quantity": 3,
+            "amount": "regular"
+          },
+          {
+            "type": "Milks",
+            "name": "nonfat milk",
+            "quantity": 1
+          },
+          {
+            "type": "Syrups",
+            "name": "vanilla syrup",
+            "quantity": 1,
+            "amount": "regular"
+          },
+          {
+            "type": "Syrups",
+            "name": "caramel syrup",
+            "quantity": 1,
+            "amount": "regular"
+          },
+          {
+            "type": "Sweeteners",
+            "name": "sugar",
+            "quantity": 2,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "606:2",
+          "quantity": 2,
+          "uid": 47
+        },
+        {
+          "children": [],
+          "key": "607:2",
+          "quantity": 3,
+          "uid": 48
+        },
+        {
+          "children": [],
+          "key": "803",
+          "quantity": 1,
+          "uid": 49
+        },
+        {
+          "children": [],
+          "key": "609:2",
+          "quantity": 1,
+          "uid": 50
+        },
+        {
+          "children": [],
+          "key": "602:2",
+          "quantity": 1,
+          "uid": 51
+        },
+        {
+          "children": [],
+          "key": "1203:2",
+          "quantity": 2,
+          "uid": 52
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 46
+    }
+  ]
+}
+i want a latte cappuccino espresso and an apple muffin
+26: ===============================
+{
+  "items": [
+    {
+      "uid": 53,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    },
+    {
+      "uid": 54,
+      "quantity": 1,
+      "key": "300:0:2",
+      "children": []
+    },
+    {
+      "uid": 55,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": []
+    },
+    {
+      "uid": 56,
+      "quantity": 1,
+      "key": "2000",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "cappuccino",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "BakeryProducts",
+        "name": "apple bran muffin",
+        "quantity": 1,
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 53
+    },
+    {
+      "children": [],
+      "key": "300:0:2",
+      "quantity": 1,
+      "uid": 54
+    },
+    {
+      "children": [],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 55
+    },
+    {
+      "children": [],
+      "key": "2000",
+      "quantity": 1,
+      "uid": 56
+    }
+  ]
+}
+i'd like a tall decaf latte iced a grande cappuccino double espresso and a warmed poppyseed muffin sliced in half
+27: ===============================
+{
+  "items": [
+    {
+      "uid": 57,
+      "quantity": 1,
+      "key": "302:1:1",
+      "children": [
+        {
+          "uid": 58,
+          "quantity": 1,
+          "key": "704",
+          "children": []
+        }
+      ]
+    },
+    {
+      "uid": 59,
+      "quantity": 1,
+      "key": "300:0:2",
+      "children": [
+        {
+          "uid": 60,
+          "quantity": 2,
+          "key": "1206:2",
+          "children": []
+        }
+      ]
+    },
+    {
+      "uid": 61,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": []
+    },
+    {
+      "uid": 62,
+      "quantity": 1,
+      "key": "2002",
+      "children": [
+        {
+          "uid": 63,
+          "quantity": 1,
+          "key": "100",
+          "children": []
+        },
+        {
+          "uid": 64,
+          "quantity": 1,
+          "key": "101",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "tall",
+        "options": [
+          {
+            "type": "Caffeines",
+            "name": "decaf",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "cappuccino",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Sweeteners",
+            "name": "espresso shot",
+            "quantity": 2,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "BakeryProducts",
+        "name": "lemon poppyseed muffin",
+        "quantity": 1,
+        "options": [
+          {
+            "type": "BakeryPreparations",
+            "name": "warmed",
+            "quantity": 1
+          },
+          {
+            "type": "BakeryPreparations",
+            "name": "cut in half",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "704",
+          "quantity": 1,
+          "uid": 58
+        }
+      ],
+      "key": "302:1:1",
+      "quantity": 1,
+      "uid": 57
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1206:2",
+          "quantity": 2,
+          "uid": 60
+        }
+      ],
+      "key": "300:0:2",
+      "quantity": 1,
+      "uid": 59
+    },
+    {
+      "children": [],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 61
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "100",
+          "quantity": 1,
+          "uid": 63
+        },
+        {
+          "children": [],
+          "key": "101",
+          "quantity": 1,
+          "uid": 64
+        }
+      ],
+      "key": "2002",
+      "quantity": 1,
+      "uid": 62
+    }
+  ]
+}
+we'd like a latte with soy and a coffee with soy
+28: ===============================
+{
+  "items": [
+    {
+      "uid": 65,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 66,
+          "quantity": 1,
+          "key": "805",
+          "children": []
+        }
+      ]
+    },
+    {
+      "uid": 67,
+      "quantity": 1,
+      "key": "501:0:2",
+      "children": [
+        {
+          "uid": 68,
+          "quantity": 1,
+          "key": "905",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Milks",
+            "name": "soy milk",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "CoffeeDrinks",
+        "name": "dark roast coffee",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Creamers",
+            "name": "soy milk creamer",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "805",
+          "quantity": 1,
+          "uid": 66
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 65
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "905",
+          "quantity": 1,
+          "uid": 68
+        }
+      ],
+      "key": "501:0:2",
+      "quantity": 1,
+      "uid": 67
+    }
+  ]
+}
+i want a latte latte macchiato and a chai latte
+29: ===============================
+{
+  "items": [
+    {
+      "uid": 69,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    },
+    {
+      "uid": 70,
+      "quantity": 1,
+      "key": "303:0:2",
+      "children": []
+    },
+    {
+      "uid": 71,
+      "quantity": 1,
+      "key": "305:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte macchiato",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "chai latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 69
+    },
+    {
+      "children": [],
+      "key": "303:0:2",
+      "quantity": 1,
+      "uid": 70
+    },
+    {
+      "children": [],
+      "key": "305:0:2",
+      "quantity": 1,
+      "uid": 71
+    }
+  ]
+}
+remove the latte macchiato
+30: ===============================
+{
+  "items": [
+    {
+      "uid": 72,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    },
+    {
+      "uid": 73,
+      "quantity": 1,
+      "key": "305:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "chai latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 72
+    },
+    {
+      "children": [],
+      "key": "305:0:2",
+      "quantity": 1,
+      "uid": 73
+    }
+  ]
+}
+i want a tall latte a short latte macchiato and a chai latte
+31: ===============================
+{
+  "items": [
+    {
+      "uid": 74,
+      "quantity": 1,
+      "key": "302:0:1",
+      "children": []
+    },
+    {
+      "uid": 75,
+      "quantity": 1,
+      "key": "303:0:0",
+      "children": []
+    },
+    {
+      "uid": 76,
+      "quantity": 1,
+      "key": "305:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "tall",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte macchiato",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "short",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "chai latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:1",
+      "quantity": 1,
+      "uid": 74
+    },
+    {
+      "children": [],
+      "key": "303:0:0",
+      "quantity": 1,
+      "uid": 75
+    },
+    {
+      "children": [],
+      "key": "305:0:2",
+      "quantity": 1,
+      "uid": 76
+    }
+  ]
+}
+remove the chai
+32: ===============================
+{
+  "items": [
+    {
+      "uid": 77,
+      "quantity": 1,
+      "key": "302:0:1",
+      "children": []
+    },
+    {
+      "uid": 78,
+      "quantity": 1,
+      "key": "303:0:0",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "tall",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte macchiato",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "short",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:1",
+      "quantity": 1,
+      "uid": 77
+    },
+    {
+      "children": [],
+      "key": "303:0:0",
+      "quantity": 1,
+      "uid": 78
+    }
+  ]
+}
+i want a tall latte a short latte macchiato and a chai latte
+33: ===============================
+{
+  "items": [
+    {
+      "uid": 79,
+      "quantity": 1,
+      "key": "302:0:1",
+      "children": []
+    },
+    {
+      "uid": 80,
+      "quantity": 1,
+      "key": "303:0:0",
+      "children": []
+    },
+    {
+      "uid": 81,
+      "quantity": 1,
+      "key": "305:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "tall",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte macchiato",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "short",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "chai latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:1",
+      "quantity": 1,
+      "uid": 79
+    },
+    {
+      "children": [],
+      "key": "303:0:0",
+      "quantity": 1,
+      "uid": 80
+    },
+    {
+      "children": [],
+      "key": "305:0:2",
+      "quantity": 1,
+      "uid": 81
+    }
+  ]
+}
+remove the short latte
+34: ===============================
+{
+  "items": [
+    {
+      "uid": 82,
+      "quantity": 1,
+      "key": "302:0:1",
+      "children": []
+    },
+    {
+      "uid": 83,
+      "quantity": 1,
+      "key": "305:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "tall",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "chai latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:1",
+      "quantity": 1,
+      "uid": 82
+    },
+    {
+      "children": [],
+      "key": "305:0:2",
+      "quantity": 1,
+      "uid": 83
+    }
+  ]
+}
+i want a tall latte a short latte macchiato and an iced chai latte
+35: ===============================
+{
+  "items": [
+    {
+      "uid": 84,
+      "quantity": 1,
+      "key": "302:0:1",
+      "children": []
+    },
+    {
+      "uid": 85,
+      "quantity": 1,
+      "key": "303:0:0",
+      "children": []
+    },
+    {
+      "uid": 86,
+      "quantity": 1,
+      "key": "305:1:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "tall",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte macchiato",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "short",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "chai latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:1",
+      "quantity": 1,
+      "uid": 84
+    },
+    {
+      "children": [],
+      "key": "303:0:0",
+      "quantity": 1,
+      "uid": 85
+    },
+    {
+      "children": [],
+      "key": "305:1:2",
+      "quantity": 1,
+      "uid": 86
+    }
+  ]
+}
+remove the iced latte
+36: ===============================
+{
+  "items": [
+    {
+      "uid": 87,
+      "quantity": 1,
+      "key": "303:0:0",
+      "children": []
+    },
+    {
+      "uid": 88,
+      "quantity": 1,
+      "key": "305:1:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte macchiato",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "short",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "chai latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "303:0:0",
+      "quantity": 1,
+      "uid": 87
+    },
+    {
+      "children": [],
+      "key": "305:1:2",
+      "quantity": 1,
+      "uid": 88
+    }
+  ]
+}
+i want a tall latte a short latte macchiato and an iced chai latte
+37: ===============================
+{
+  "items": [
+    {
+      "uid": 89,
+      "quantity": 1,
+      "key": "302:0:1",
+      "children": []
+    },
+    {
+      "uid": 90,
+      "quantity": 1,
+      "key": "303:0:0",
+      "children": []
+    },
+    {
+      "uid": 91,
+      "quantity": 1,
+      "key": "305:1:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "tall",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte macchiato",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "short",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "chai latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:1",
+      "quantity": 1,
+      "uid": 89
+    },
+    {
+      "children": [],
+      "key": "303:0:0",
+      "quantity": 1,
+      "uid": 90
+    },
+    {
+      "children": [],
+      "key": "305:1:2",
+      "quantity": 1,
+      "uid": 91
+    }
+  ]
+}
+remove the latte iced
+38: ===============================
+{
+  "items": [
+    {
+      "uid": 92,
+      "quantity": 1,
+      "key": "302:0:1",
+      "children": []
+    },
+    {
+      "uid": 93,
+      "quantity": 1,
+      "key": "303:0:0",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "tall",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte macchiato",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "short",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:1",
+      "quantity": 1,
+      "uid": 92
+    },
+    {
+      "children": [],
+      "key": "303:0:0",
+      "quantity": 1,
+      "uid": 93
+    }
+  ]
+}
+i want an iced tall latte a short latte macchiato and an iced chai latte
+39: ===============================
+{
+  "items": [
+    {
+      "uid": 94,
+      "quantity": 1,
+      "key": "302:1:1",
+      "children": []
+    },
+    {
+      "uid": 95,
+      "quantity": 1,
+      "key": "303:0:0",
+      "children": []
+    },
+    {
+      "uid": 96,
+      "quantity": 1,
+      "key": "305:1:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "tall",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte macchiato",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "short",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "chai latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:1:1",
+      "quantity": 1,
+      "uid": 94
+    },
+    {
+      "children": [],
+      "key": "303:0:0",
+      "quantity": 1,
+      "uid": 95
+    },
+    {
+      "children": [],
+      "key": "305:1:2",
+      "quantity": 1,
+      "uid": 96
+    }
+  ]
+}
+remove the tall latte iced
+40: ===============================
+{
+  "items": [
+    {
+      "uid": 97,
+      "quantity": 1,
+      "key": "303:0:0",
+      "children": []
+    },
+    {
+      "uid": 98,
+      "quantity": 1,
+      "key": "305:1:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte macchiato",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "short",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "chai latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "303:0:0",
+      "quantity": 1,
+      "uid": 97
+    },
+    {
+      "children": [],
+      "key": "305:1:2",
+      "quantity": 1,
+      "uid": 98
+    }
+  ]
+}
+i want an iced tall latte a short latte macchiato and an iced chai latte
+41: ===============================
+{
+  "items": [
+    {
+      "uid": 99,
+      "quantity": 1,
+      "key": "302:1:1",
+      "children": []
+    },
+    {
+      "uid": 100,
+      "quantity": 1,
+      "key": "303:0:0",
+      "children": []
+    },
+    {
+      "uid": 101,
+      "quantity": 1,
+      "key": "305:1:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "tall",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte macchiato",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "short",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "chai latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:1:1",
+      "quantity": 1,
+      "uid": 99
+    },
+    {
+      "children": [],
+      "key": "303:0:0",
+      "quantity": 1,
+      "uid": 100
+    },
+    {
+      "children": [],
+      "key": "305:1:2",
+      "quantity": 1,
+      "uid": 101
+    }
+  ]
+}
+remove that
+42: ===============================
+{
+  "items": [
+    {
+      "uid": 102,
+      "quantity": 1,
+      "key": "302:1:1",
+      "children": []
+    },
+    {
+      "uid": 103,
+      "quantity": 1,
+      "key": "303:0:0",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "tall",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte macchiato",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "short",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:1:1",
+      "quantity": 1,
+      "uid": 102
+    },
+    {
+      "children": [],
+      "key": "303:0:0",
+      "quantity": 1,
+      "uid": 103
+    }
+  ]
+}
+This is a placeholder test that is designed to fail.
+43: ===============================
+{
+  "items": []
+}
++++++
+{
+  "items": []
+}
+---------
+{
+  "items": []
+}
+i want a latte and an espresso
+44: ===============================
+{
+  "items": [
+    {
+      "uid": 104,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    },
+    {
+      "uid": 105,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 104
+    },
+    {
+      "children": [],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 105
+    }
+  ]
+}
+add extra vanilla syrup to the latte
+45: ===============================
+{
+  "items": [
+    {
+      "uid": 106,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 107,
+          "quantity": 1,
+          "key": "609:3",
+          "children": []
+        }
+      ]
+    },
+    {
+      "uid": 108,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Syrups",
+            "name": "vanilla syrup",
+            "quantity": 1,
+            "amount": "extra"
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "609:3",
+          "quantity": 1,
+          "uid": 107
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 106
+    },
+    {
+      "children": [],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 108
+    }
+  ]
+}
+i want a latte and an espresso
+46: ===============================
+{
+  "items": [
+    {
+      "uid": 109,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    },
+    {
+      "uid": 110,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 109
+    },
+    {
+      "children": [],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 110
+    }
+  ]
+}
+make that with extra vanilla syrup
+47: ===============================
+{
+  "items": [
+    {
+      "uid": 111,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    },
+    {
+      "uid": 112,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": [
+        {
+          "uid": 113,
+          "quantity": 1,
+          "key": "609:3",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": [
+          {
+            "type": "Syrups",
+            "name": "vanilla syrup",
+            "quantity": 1,
+            "amount": "extra"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 111
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "609:3",
+          "quantity": 1,
+          "uid": 113
+        }
+      ],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 112
+    }
+  ]
+}
+i want a latte and an espresso
+48: ===============================
+{
+  "items": [
+    {
+      "uid": 114,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    },
+    {
+      "uid": 115,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 114
+    },
+    {
+      "children": [],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 115
+    }
+  ]
+}
+make that a triple
+49: ===============================
+{
+  "items": [
+    {
+      "uid": 116,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    },
+    {
+      "uid": 117,
+      "quantity": 1,
+      "key": "400:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "triple",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 116
+    },
+    {
+      "children": [],
+      "key": "400:0:2",
+      "quantity": 1,
+      "uid": 117
+    }
+  ]
+}
+i want a latte and an espresso
+50: ===============================
+{
+  "items": [
+    {
+      "uid": 118,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    },
+    {
+      "uid": 119,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 118
+    },
+    {
+      "children": [],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 119
+    }
+  ]
+}
+add whipped cream to the espresso
+51: ===============================
+{
+  "items": [
+    {
+      "uid": 120,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    },
+    {
+      "uid": 121,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": [
+        {
+          "uid": 122,
+          "quantity": 1,
+          "key": "1004:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": [
+          {
+            "type": "Toppings",
+            "name": "whipped cream",
+            "quantity": 1,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 120
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1004:2",
+          "quantity": 1,
+          "uid": 122
+        }
+      ],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 121
+    }
+  ]
+}
+i want a latte
+52: ===============================
+{
+  "items": [
+    {
+      "uid": 123,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 123
+    }
+  ]
+}
+add vanilla syrup and honey to that
+53: ===============================
+{
+  "items": [
+    {
+      "uid": 124,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 125,
+          "quantity": 1,
+          "key": "609:2",
+          "children": []
+        },
+        {
+          "uid": 126,
+          "quantity": 1,
+          "key": "1201:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Syrups",
+            "name": "vanilla syrup",
+            "quantity": 1,
+            "amount": "regular"
+          },
+          {
+            "type": "Sweeteners",
+            "name": "honey",
+            "quantity": 1,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "609:2",
+          "quantity": 1,
+          "uid": 125
+        },
+        {
+          "children": [],
+          "key": "1201:2",
+          "quantity": 1,
+          "uid": 126
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 124
+    }
+  ]
+}
+i want a latte
+54: ===============================
+{
+  "items": [
+    {
+      "uid": 127,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 127
+    }
+  ]
+}
+make that latte decaf
+55: ===============================
+{
+  "items": [
+    {
+      "uid": 128,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 129,
+          "quantity": 1,
+          "key": "704",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Caffeines",
+            "name": "decaf",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "704",
+          "quantity": 1,
+          "uid": 129
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 128
+    }
+  ]
+}
+i want a half caf latte
+56: ===============================
+{
+  "items": [
+    {
+      "uid": 130,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 131,
+          "quantity": 1,
+          "key": "702",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Caffeines",
+            "name": "half caf",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "702",
+          "quantity": 1,
+          "uid": 131
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 130
+    }
+  ]
+}
+make that latte decaf
+57: ===============================
+{
+  "items": [
+    {
+      "uid": 132,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 133,
+          "quantity": 1,
+          "key": "704",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Caffeines",
+            "name": "decaf",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "704",
+          "quantity": 1,
+          "uid": 133
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 132
+    }
+  ]
+}
+i want a half caf latte
+58: ===============================
+{
+  "items": [
+    {
+      "uid": 134,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 135,
+          "quantity": 1,
+          "key": "702",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Caffeines",
+            "name": "half caf",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "702",
+          "quantity": 1,
+          "uid": 135
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 134
+    }
+  ]
+}
+make that decaf
+59: ===============================
+{
+  "items": [
+    {
+      "uid": 136,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 137,
+          "quantity": 1,
+          "key": "704",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Caffeines",
+            "name": "decaf",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "704",
+          "quantity": 1,
+          "uid": 137
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 136
+    }
+  ]
+}
+i want a latte
+60: ===============================
+{
+  "items": [
+    {
+      "uid": 138,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 138
+    }
+  ]
+}
+make that latte iced
+61: ===============================
+{
+  "items": [
+    {
+      "uid": 139,
+      "quantity": 1,
+      "key": "302:1:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:1:2",
+      "quantity": 1,
+      "uid": 139
+    }
+  ]
+}
+i want a latte
+62: ===============================
+{
+  "items": [
+    {
+      "uid": 140,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 140
+    }
+  ]
+}
+make that iced
+63: ===============================
+{
+  "items": [
+    {
+      "uid": 141,
+      "quantity": 1,
+      "key": "302:1:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:1:2",
+      "quantity": 1,
+      "uid": 141
+    }
+  ]
+}
+i want a latte
+64: ===============================
+{
+  "items": [
+    {
+      "uid": 142,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 142
+    }
+  ]
+}
+make that latte with soy
+65: ===============================
+{
+  "items": [
+    {
+      "uid": 143,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 144,
+          "quantity": 1,
+          "key": "805",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Milks",
+            "name": "soy milk",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "805",
+          "quantity": 1,
+          "uid": 144
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 143
+    }
+  ]
+}
+i want a latte
+66: ===============================
+{
+  "items": [
+    {
+      "uid": 145,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 145
+    }
+  ]
+}
+make that with soy
+67: ===============================
+{
+  "items": [
+    {
+      "uid": 146,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 147,
+          "quantity": 1,
+          "key": "805",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Milks",
+            "name": "soy milk",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "805",
+          "quantity": 1,
+          "uid": 147
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 146
+    }
+  ]
+}
+i want a latte
+68: ===============================
+{
+  "items": [
+    {
+      "uid": 148,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 148
+    }
+  ]
+}
+change that to soy
+69: ===============================
+{
+  "items": [
+    {
+      "uid": 149,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 150,
+          "quantity": 1,
+          "key": "805",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Milks",
+            "name": "soy milk",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "805",
+          "quantity": 1,
+          "uid": 150
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 149
+    }
+  ]
+}
+we'd like a cappuccino
+70: ===============================
+{
+  "items": [
+    {
+      "uid": 151,
+      "quantity": 1,
+      "key": "300:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "cappuccino",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "300:0:2",
+      "quantity": 1,
+      "uid": 151
+    }
+  ]
+}
+change that cappuccino to decaf
+71: ===============================
+{
+  "items": [
+    {
+      "uid": 152,
+      "quantity": 1,
+      "key": "300:0:2",
+      "children": [
+        {
+          "uid": 153,
+          "quantity": 1,
+          "key": "704",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "cappuccino",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Caffeines",
+            "name": "decaf",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "704",
+          "quantity": 1,
+          "uid": 153
+        }
+      ],
+      "key": "300:0:2",
+      "quantity": 1,
+      "uid": 152
+    }
+  ]
+}
+we'd like a cappuccino with two pumps of vanilla
+72: ===============================
+{
+  "items": [
+    {
+      "uid": 154,
+      "quantity": 1,
+      "key": "300:0:2",
+      "children": [
+        {
+          "uid": 155,
+          "quantity": 2,
+          "key": "609:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "cappuccino",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Syrups",
+            "name": "vanilla syrup",
+            "quantity": 2,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "609:2",
+          "quantity": 2,
+          "uid": 155
+        }
+      ],
+      "key": "300:0:2",
+      "quantity": 1,
+      "uid": 154
+    }
+  ]
+}
+make that cappuccino with three pumps of vanilla
+73: ===============================
+{
+  "items": [
+    {
+      "uid": 156,
+      "quantity": 1,
+      "key": "300:0:2",
+      "children": [
+        {
+          "uid": 157,
+          "quantity": 3,
+          "key": "609:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "cappuccino",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Syrups",
+            "name": "vanilla syrup",
+            "quantity": 3,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "609:2",
+          "quantity": 3,
+          "uid": 157
+        }
+      ],
+      "key": "300:0:2",
+      "quantity": 1,
+      "uid": 156
+    }
+  ]
+}
+we'd like a cappuccino with a pack of sugar
+74: ===============================
+{
+  "items": [
+    {
+      "uid": 158,
+      "quantity": 1,
+      "key": "300:0:2",
+      "children": [
+        {
+          "uid": 159,
+          "quantity": 1,
+          "key": "1203:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "cappuccino",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Sweeteners",
+            "name": "sugar",
+            "quantity": 1,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1203:2",
+          "quantity": 1,
+          "uid": 159
+        }
+      ],
+      "key": "300:0:2",
+      "quantity": 1,
+      "uid": 158
+    }
+  ]
+}
+make that cappuccino with two packs of sugar
+75: ===============================
+{
+  "items": [
+    {
+      "uid": 160,
+      "quantity": 1,
+      "key": "300:0:2",
+      "children": [
+        {
+          "uid": 161,
+          "quantity": 2,
+          "key": "1203:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "cappuccino",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Sweeteners",
+            "name": "sugar",
+            "quantity": 2,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1203:2",
+          "quantity": 2,
+          "uid": 161
+        }
+      ],
+      "key": "300:0:2",
+      "quantity": 1,
+      "uid": 160
+    }
+  ]
+}
+we'd like a cappuccino with a pack of sugar
+76: ===============================
+{
+  "items": [
+    {
+      "uid": 162,
+      "quantity": 1,
+      "key": "300:0:2",
+      "children": [
+        {
+          "uid": 163,
+          "quantity": 1,
+          "key": "1203:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "cappuccino",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Sweeteners",
+            "name": "sugar",
+            "quantity": 1,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1203:2",
+          "quantity": 1,
+          "uid": 163
+        }
+      ],
+      "key": "300:0:2",
+      "quantity": 1,
+      "uid": 162
+    }
+  ]
+}
+make that with two packs of sugar
+77: ===============================
+{
+  "items": [
+    {
+      "uid": 164,
+      "quantity": 1,
+      "key": "300:0:2",
+      "children": [
+        {
+          "uid": 165,
+          "quantity": 2,
+          "key": "1203:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "cappuccino",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Sweeteners",
+            "name": "sugar",
+            "quantity": 2,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1203:2",
+          "quantity": 2,
+          "uid": 165
+        }
+      ],
+      "key": "300:0:2",
+      "quantity": 1,
+      "uid": 164
+    }
+  ]
+}
+i'd like a flat white with two equal
+78: ===============================
+{
+  "items": [
+    {
+      "uid": 166,
+      "quantity": 1,
+      "key": "301:0:2",
+      "children": [
+        {
+          "uid": 167,
+          "quantity": 2,
+          "key": "1200:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "flat white",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Sweeteners",
+            "name": "equal",
+            "quantity": 2,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1200:2",
+          "quantity": 2,
+          "uid": 167
+        }
+      ],
+      "key": "301:0:2",
+      "quantity": 1,
+      "uid": 166
+    }
+  ]
+}
+add three equal to the flat white
+79: ===============================
+{
+  "items": [
+    {
+      "uid": 168,
+      "quantity": 1,
+      "key": "301:0:2",
+      "children": [
+        {
+          "uid": 169,
+          "quantity": 5,
+          "key": "1200:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "flat white",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Sweeteners",
+            "name": "equal",
+            "quantity": 5,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1200:2",
+          "quantity": 5,
+          "uid": 169
+        }
+      ],
+      "key": "301:0:2",
+      "quantity": 1,
+      "uid": 168
+    }
+  ]
+}
+i'd like a flat white with two equal
+80: ===============================
+{
+  "items": [
+    {
+      "uid": 170,
+      "quantity": 1,
+      "key": "301:0:2",
+      "children": [
+        {
+          "uid": 171,
+          "quantity": 2,
+          "key": "1200:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "flat white",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Sweeteners",
+            "name": "equal",
+            "quantity": 2,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1200:2",
+          "quantity": 2,
+          "uid": 171
+        }
+      ],
+      "key": "301:0:2",
+      "quantity": 1,
+      "uid": 170
+    }
+  ]
+}
+add three equal to that
+81: ===============================
+{
+  "items": [
+    {
+      "uid": 172,
+      "quantity": 1,
+      "key": "301:0:2",
+      "children": [
+        {
+          "uid": 173,
+          "quantity": 5,
+          "key": "1200:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "flat white",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Sweeteners",
+            "name": "equal",
+            "quantity": 5,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1200:2",
+          "quantity": 5,
+          "uid": 173
+        }
+      ],
+      "key": "301:0:2",
+      "quantity": 1,
+      "uid": 172
+    }
+  ]
+}
+we would like a latte
+82: ===============================
+{
+  "items": [
+    {
+      "uid": 174,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 174
+    }
+  ]
+}
+change that latte to a tall
+83: ===============================
+{
+  "items": [
+    {
+      "uid": 175,
+      "quantity": 1,
+      "key": "302:0:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "tall",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:1",
+      "quantity": 1,
+      "uid": 175
+    }
+  ]
+}
+we would like a latte
+84: ===============================
+{
+  "items": [
+    {
+      "uid": 176,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 176
+    }
+  ]
+}
+make that latte tall
+85: ===============================
+{
+  "items": [
+    {
+      "uid": 177,
+      "quantity": 1,
+      "key": "302:0:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "tall",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:1",
+      "quantity": 1,
+      "uid": 177
+    }
+  ]
+}
+we would like a latte
+86: ===============================
+{
+  "items": [
+    {
+      "uid": 178,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 178
+    }
+  ]
+}
+change that to a tall
+87: ===============================
+{
+  "items": [
+    {
+      "uid": 179,
+      "quantity": 1,
+      "key": "302:0:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "tall",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:1",
+      "quantity": 1,
+      "uid": 179
+    }
+  ]
+}
+we would like a latte
+88: ===============================
+{
+  "items": [
+    {
+      "uid": 180,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 180
+    }
+  ]
+}
+change that to a tall and iced
+89: ===============================
+{
+  "items": [
+    {
+      "uid": 181,
+      "quantity": 1,
+      "key": "302:1:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "tall",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:1:1",
+      "quantity": 1,
+      "uid": 181
+    }
+  ]
+}
+i'd like a latte
+90: ===============================
+{
+  "items": [
+    {
+      "uid": 182,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 182
+    }
+  ]
+}
+make that latte iced and decaf
+91: ===============================
+{
+  "items": [
+    {
+      "uid": 183,
+      "quantity": 1,
+      "key": "302:1:2",
+      "children": [
+        {
+          "uid": 184,
+          "quantity": 1,
+          "key": "704",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Caffeines",
+            "name": "decaf",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "704",
+          "quantity": 1,
+          "uid": 184
+        }
+      ],
+      "key": "302:1:2",
+      "quantity": 1,
+      "uid": 183
+    }
+  ]
+}
+i'd like a cappuccino
+92: ===============================
+{
+  "items": [
+    {
+      "uid": 185,
+      "quantity": 1,
+      "key": "300:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "cappuccino",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "300:0:2",
+      "quantity": 1,
+      "uid": 185
+    }
+  ]
+}
+change that cappuccino to a decaf
+93: ===============================
+{
+  "items": [
+    {
+      "uid": 186,
+      "quantity": 1,
+      "key": "300:0:2",
+      "children": [
+        {
+          "uid": 187,
+          "quantity": 1,
+          "key": "704",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "cappuccino",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Caffeines",
+            "name": "decaf",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "704",
+          "quantity": 1,
+          "uid": 187
+        }
+      ],
+      "key": "300:0:2",
+      "quantity": 1,
+      "uid": 186
+    }
+  ]
+}
+i'd like a cappuccino
+94: ===============================
+{
+  "items": [
+    {
+      "uid": 188,
+      "quantity": 1,
+      "key": "300:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "cappuccino",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "300:0:2",
+      "quantity": 1,
+      "uid": 188
+    }
+  ]
+}
+make that cappuccino half decaf
+95: ===============================
+{
+  "items": [
+    {
+      "uid": 189,
+      "quantity": 1,
+      "key": "300:0:2",
+      "children": [
+        {
+          "uid": 190,
+          "quantity": 1,
+          "key": "702",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "cappuccino",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Caffeines",
+            "name": "half caf",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "702",
+          "quantity": 1,
+          "uid": 190
+        }
+      ],
+      "key": "300:0:2",
+      "quantity": 1,
+      "uid": 189
+    }
+  ]
+}
+i'd like a flat white
+96: ===============================
+{
+  "items": [
+    {
+      "uid": 191,
+      "quantity": 1,
+      "key": "301:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "flat white",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "301:0:2",
+      "quantity": 1,
+      "uid": 191
+    }
+  ]
+}
+make that half caf
+97: ===============================
+{
+  "items": [
+    {
+      "uid": 192,
+      "quantity": 1,
+      "key": "301:0:2",
+      "children": [
+        {
+          "uid": 193,
+          "quantity": 1,
+          "key": "702",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "flat white",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Caffeines",
+            "name": "half caf",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "702",
+          "quantity": 1,
+          "uid": 193
+        }
+      ],
+      "key": "301:0:2",
+      "quantity": 1,
+      "uid": 192
+    }
+  ]
+}
+i'd like a flat white
+98: ===============================
+{
+  "items": [
+    {
+      "uid": 194,
+      "quantity": 1,
+      "key": "301:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "flat white",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "301:0:2",
+      "quantity": 1,
+      "uid": 194
+    }
+  ]
+}
+change that to a half caf
+99: ===============================
+{
+  "items": [
+    {
+      "uid": 195,
+      "quantity": 1,
+      "key": "301:0:2",
+      "children": [
+        {
+          "uid": 196,
+          "quantity": 1,
+          "key": "702",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "flat white",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Caffeines",
+            "name": "half caf",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "702",
+          "quantity": 1,
+          "uid": 196
+        }
+      ],
+      "key": "301:0:2",
+      "quantity": 1,
+      "uid": 195
+    }
+  ]
+}
+can i get a latte
+100: ===============================
+{
+  "items": [
+    {
+      "uid": 197,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 197
+    }
+  ]
+}
+make that a tall
+101: ===============================
+{
+  "items": [
+    {
+      "uid": 198,
+      "quantity": 1,
+      "key": "302:0:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "tall",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:1",
+      "quantity": 1,
+      "uid": 198
+    }
+  ]
+}
+get me an espresso
+102: ===============================
+{
+  "items": [
+    {
+      "uid": 199,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 199
+    }
+  ]
+}
+add cream to that
+103: ===============================
+{
+  "items": [
+    {
+      "uid": 200,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": [
+        {
+          "uid": 201,
+          "quantity": 1,
+          "key": "909",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": [
+          {
+            "type": "Creamers",
+            "name": "half and half",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "909",
+          "quantity": 1,
+          "uid": 201
+        }
+      ],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 200
+    }
+  ]
+}
+i want a latte
+104: ===============================
+{
+  "items": [
+    {
+      "uid": 202,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 202
+    }
+  ]
+}
+add peppermint syrup
+105: ===============================
+{
+  "items": [
+    {
+      "uid": 203,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 204,
+          "quantity": 1,
+          "key": "606:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Syrups",
+            "name": "peppermint syrup",
+            "quantity": 1,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "606:2",
+          "quantity": 1,
+          "uid": 204
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 203
+    }
+  ]
+}
+i want a latte
+106: ===============================
+{
+  "items": [
+    {
+      "uid": 205,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 205
+    }
+  ]
+}
+can you make that with foam
+107: ===============================
+{
+  "items": [
+    {
+      "uid": 206,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 207,
+          "quantity": 1,
+          "key": "1001:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Toppings",
+            "name": "foam",
+            "quantity": 1,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1001:2",
+          "quantity": 1,
+          "uid": 207
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 206
+    }
+  ]
+}
+i'd like a latte
+108: ===============================
+{
+  "items": [
+    {
+      "uid": 208,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 208
+    }
+  ]
+}
+i want that with a lid
+109: ===============================
+{
+  "items": [
+    {
+      "uid": 209,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 210,
+          "quantity": 1,
+          "key": "1101",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "LattePreparations",
+            "name": "lid",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1101",
+          "quantity": 1,
+          "uid": 210
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 209
+    }
+  ]
+}
+i'd like a decaf latte
+110: ===============================
+{
+  "items": [
+    {
+      "uid": 211,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 212,
+          "quantity": 1,
+          "key": "704",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Caffeines",
+            "name": "decaf",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "704",
+          "quantity": 1,
+          "uid": 212
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 211
+    }
+  ]
+}
+actually make that a cappuccino
+111: ===============================
+{
+  "items": [
+    {
+      "uid": 213,
+      "quantity": 1,
+      "key": "300:0:2",
+      "children": [
+        {
+          "uid": 214,
+          "quantity": 1,
+          "key": "704",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "cappuccino",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Caffeines",
+            "name": "decaf",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "704",
+          "quantity": 1,
+          "uid": 214
+        }
+      ],
+      "key": "300:0:2",
+      "quantity": 1,
+      "uid": 213
+    }
+  ]
+}
+i want a decaf latte
+112: ===============================
+{
+  "items": [
+    {
+      "uid": 215,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 216,
+          "quantity": 1,
+          "key": "704",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Caffeines",
+            "name": "decaf",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "704",
+          "quantity": 1,
+          "uid": 216
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 215
+    }
+  ]
+}
+make that latte a cappuccino
+113: ===============================
+{
+  "items": [
+    {
+      "uid": 217,
+      "quantity": 1,
+      "key": "300:0:2",
+      "children": [
+        {
+          "uid": 218,
+          "quantity": 1,
+          "key": "704",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "cappuccino",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Caffeines",
+            "name": "decaf",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "704",
+          "quantity": 1,
+          "uid": 218
+        }
+      ],
+      "key": "300:0:2",
+      "quantity": 1,
+      "uid": 217
+    }
+  ]
+}
+i'd like a decaf latte
+114: ===============================
+{
+  "items": [
+    {
+      "uid": 219,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 220,
+          "quantity": 1,
+          "key": "704",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Caffeines",
+            "name": "decaf",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "704",
+          "quantity": 1,
+          "uid": 220
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 219
+    }
+  ]
+}
+change that latte to a half caf espresso
+115: ===============================
+{
+  "items": [
+    {
+      "uid": 221,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": [
+        {
+          "uid": 222,
+          "quantity": 1,
+          "key": "702",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": [
+          {
+            "type": "Caffeines",
+            "name": "half caf",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "702",
+          "quantity": 1,
+          "uid": 222
+        }
+      ],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 221
+    }
+  ]
+}
+i want an espresso
+116: ===============================
+{
+  "items": [
+    {
+      "uid": 223,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 223
+    }
+  ]
+}
+replace that espresso with a tall iced latte
+117: ===============================
+{
+  "items": [
+    {
+      "uid": 224,
+      "quantity": 1,
+      "key": "302:1:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "tall",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:1:1",
+      "quantity": 1,
+      "uid": 224
+    }
+  ]
+}
+i want an espresso
+118: ===============================
+{
+  "items": [
+    {
+      "uid": 225,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 225
+    }
+  ]
+}
+change that to a tall iced latte
+119: ===============================
+{
+  "items": [
+    {
+      "uid": 226,
+      "quantity": 1,
+      "key": "302:1:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "tall",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:1:1",
+      "quantity": 1,
+      "uid": 226
+    }
+  ]
+}
+i want an espresso
+120: ===============================
+{
+  "items": [
+    {
+      "uid": 227,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 227
+    }
+  ]
+}
+replace that with a tall iced latte
+121: ===============================
+{
+  "items": [
+    {
+      "uid": 228,
+      "quantity": 1,
+      "key": "302:1:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "tall",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:1:1",
+      "quantity": 1,
+      "uid": 228
+    }
+  ]
+}
+get me an espresso
+122: ===============================
+{
+  "items": [
+    {
+      "uid": 229,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 229
+    }
+  ]
+}
+change that to a tall iced latte
+123: ===============================
+{
+  "items": [
+    {
+      "uid": 230,
+      "quantity": 1,
+      "key": "302:1:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "tall",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:1:1",
+      "quantity": 1,
+      "uid": 230
+    }
+  ]
+}
+get me a latte
+124: ===============================
+{
+  "items": [
+    {
+      "uid": 231,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 231
+    }
+  ]
+}
+remove the latte and add an espresso
+125: ===============================
+{
+  "items": [
+    {
+      "uid": 232,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 232
+    }
+  ]
+}
+get me a latte
+126: ===============================
+{
+  "items": [
+    {
+      "uid": 233,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 233
+    }
+  ]
+}
+get me an espresso and remove the latte
+127: ===============================
+{
+  "items": [
+    {
+      "uid": 234,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 234
+    }
+  ]
+}
+get me a latte
+128: ===============================
+{
+  "items": [
+    {
+      "uid": 235,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 235
+    }
+  ]
+}
+add an espresso and remove the latte
+129: ===============================
+{
+  "items": [
+    {
+      "uid": 236,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 236
+    }
+  ]
+}
+we'll also have a tall buttered rum cappuccino
+130: ===============================
+{
+  "items": [
+    {
+      "uid": 237,
+      "quantity": 1,
+      "key": "300:0:1",
+      "children": [
+        {
+          "uid": 238,
+          "quantity": 1,
+          "key": "601:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "cappuccino",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "tall",
+        "options": [
+          {
+            "type": "Syrups",
+            "name": "buttered rum syrup",
+            "quantity": 1,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "601:2",
+          "quantity": 1,
+          "uid": 238
+        }
+      ],
+      "key": "300:0:1",
+      "quantity": 1,
+      "uid": 237
+    }
+  ]
+}
+i'd ah i'd like a latte and um i need a second and and also an espresso
+131: ===============================
+{
+  "items": [
+    {
+      "uid": 239,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    },
+    {
+      "uid": 240,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 239
+    },
+    {
+      "children": [],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 240
+    }
+  ]
+}
+i want a coffee with two sugar
+132: ===============================
+{
+  "items": [
+    {
+      "uid": 241,
+      "quantity": 1,
+      "key": "501:0:2",
+      "children": [
+        {
+          "uid": 242,
+          "quantity": 2,
+          "key": "1203:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "CoffeeDrinks",
+        "name": "dark roast coffee",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Sweeteners",
+            "name": "sugar",
+            "quantity": 2,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1203:2",
+          "quantity": 2,
+          "uid": 242
+        }
+      ],
+      "key": "501:0:2",
+      "quantity": 1,
+      "uid": 241
+    }
+  ]
+}
+make that no sugar
+133: ===============================
+{
+  "items": [
+    {
+      "uid": 243,
+      "quantity": 1,
+      "key": "501:0:2",
+      "children": [
+        {
+          "uid": 244,
+          "quantity": 1,
+          "key": "1203:0",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "CoffeeDrinks",
+        "name": "dark roast coffee",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Sweeteners",
+            "name": "sugar",
+            "quantity": 1,
+            "amount": "no"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1203:0",
+          "quantity": 1,
+          "uid": 244
+        }
+      ],
+      "key": "501:0:2",
+      "quantity": 1,
+      "uid": 243
+    }
+  ]
+}
+i want a coffee with two sugar
+134: ===============================
+{
+  "items": [
+    {
+      "uid": 245,
+      "quantity": 1,
+      "key": "501:0:2",
+      "children": [
+        {
+          "uid": 246,
+          "quantity": 2,
+          "key": "1203:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "CoffeeDrinks",
+        "name": "dark roast coffee",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Sweeteners",
+            "name": "sugar",
+            "quantity": 2,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1203:2",
+          "quantity": 2,
+          "uid": 246
+        }
+      ],
+      "key": "501:0:2",
+      "quantity": 1,
+      "uid": 245
+    }
+  ]
+}
+make that without sugar
+135: ===============================
+{
+  "items": [
+    {
+      "uid": 247,
+      "quantity": 1,
+      "key": "501:0:2",
+      "children": [
+        {
+          "uid": 248,
+          "quantity": 1,
+          "key": "1203:0",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "CoffeeDrinks",
+        "name": "dark roast coffee",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Sweeteners",
+            "name": "sugar",
+            "quantity": 1,
+            "amount": "no"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1203:0",
+          "quantity": 1,
+          "uid": 248
+        }
+      ],
+      "key": "501:0:2",
+      "quantity": 1,
+      "uid": 247
+    }
+  ]
+}
+i want a coffee with two equal
+136: ===============================
+{
+  "items": [
+    {
+      "uid": 249,
+      "quantity": 1,
+      "key": "501:0:2",
+      "children": [
+        {
+          "uid": 250,
+          "quantity": 2,
+          "key": "1200:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "CoffeeDrinks",
+        "name": "dark roast coffee",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Sweeteners",
+            "name": "equal",
+            "quantity": 2,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1200:2",
+          "quantity": 2,
+          "uid": 250
+        }
+      ],
+      "key": "501:0:2",
+      "quantity": 1,
+      "uid": 249
+    }
+  ]
+}
+make that without sweetener
+137: ===============================
+{
+  "items": [
+    {
+      "uid": 251,
+      "quantity": 1,
+      "key": "501:0:2",
+      "children": [
+        {
+          "uid": 252,
+          "quantity": 1,
+          "key": "1200:0",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "CoffeeDrinks",
+        "name": "dark roast coffee",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Sweeteners",
+            "name": "equal",
+            "quantity": 1,
+            "amount": "no"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1200:0",
+          "quantity": 1,
+          "uid": 252
+        }
+      ],
+      "key": "501:0:2",
+      "quantity": 1,
+      "uid": 251
+    }
+  ]
+}
+i want a tall latte a short latte macchiato and a venti chai latte iced
+138: ===============================
+{
+  "items": [
+    {
+      "uid": 253,
+      "quantity": 1,
+      "key": "302:0:1",
+      "children": []
+    },
+    {
+      "uid": 254,
+      "quantity": 1,
+      "key": "303:0:0",
+      "children": []
+    },
+    {
+      "uid": 255,
+      "quantity": 1,
+      "key": "305:1:3",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "tall",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte macchiato",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "short",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "chai latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "venti",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:1",
+      "quantity": 1,
+      "uid": 253
+    },
+    {
+      "children": [],
+      "key": "303:0:0",
+      "quantity": 1,
+      "uid": 254
+    },
+    {
+      "children": [],
+      "key": "305:1:3",
+      "quantity": 1,
+      "uid": 255
+    }
+  ]
+}
+i want a latte with whip
+139: ===============================
+{
+  "items": [
+    {
+      "uid": 256,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 257,
+          "quantity": 1,
+          "key": "1004:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Toppings",
+            "name": "whipped cream",
+            "quantity": 1,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1004:2",
+          "quantity": 1,
+          "uid": 257
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 256
+    }
+  ]
+}
+i want whip on that
+140: ===============================
+{
+  "items": [
+    {
+      "uid": 258,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 259,
+          "quantity": 2,
+          "key": "1004:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Toppings",
+            "name": "whipped cream",
+            "quantity": 2,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1004:2",
+          "quantity": 2,
+          "uid": 259
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 258
+    }
+  ]
+}
+i want a latte with whip
+141: ===============================
+{
+  "items": [
+    {
+      "uid": 260,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 261,
+          "quantity": 1,
+          "key": "1004:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Toppings",
+            "name": "whipped cream",
+            "quantity": 1,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1004:2",
+          "quantity": 1,
+          "uid": 261
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 260
+    }
+  ]
+}
+remove the whip
+142: ===============================
+{
+  "items": [
+    {
+      "uid": 262,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 262
+    }
+  ]
+}
+i want a vanilla latte
+143: ===============================
+{
+  "items": [
+    {
+      "uid": 263,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 264,
+          "quantity": 1,
+          "key": "609:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Syrups",
+            "name": "vanilla syrup",
+            "quantity": 1,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "609:2",
+          "quantity": 1,
+          "uid": 264
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 263
+    }
+  ]
+}
+remove the vanilla
+144: ===============================
+{
+  "items": [
+    {
+      "uid": 265,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 265
+    }
+  ]
+}
+can we have a latte
+145: ===============================
+{
+  "items": [
+    {
+      "uid": 266,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 266
+    }
+  ]
+}
+give me an iced latte
+146: ===============================
+{
+  "items": [
+    {
+      "uid": 267,
+      "quantity": 1,
+      "key": "302:1:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:1:2",
+      "quantity": 1,
+      "uid": 267
+    }
+  ]
+}
+make that not iced
+147: ===============================
+{
+  "items": [
+    {
+      "uid": 268,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 268
+    }
+  ]
+}
+i'd like a latte and a flat white
+148: ===============================
+{
+  "items": [
+    {
+      "uid": 269,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    },
+    {
+      "uid": 270,
+      "quantity": 1,
+      "key": "301:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "flat white",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 269
+    },
+    {
+      "children": [],
+      "key": "301:0:2",
+      "quantity": 1,
+      "uid": 270
+    }
+  ]
+}
+make that latte decaf
+149: ===============================
+{
+  "items": [
+    {
+      "uid": 271,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    },
+    {
+      "uid": 272,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 273,
+          "quantity": 1,
+          "key": "704",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Caffeines",
+            "name": "decaf",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 271
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "704",
+          "quantity": 1,
+          "uid": 273
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 272
+    }
+  ]
+}
+i want a peppermint latte
+150: ===============================
+{
+  "items": [
+    {
+      "uid": 274,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 275,
+          "quantity": 1,
+          "key": "606:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Syrups",
+            "name": "peppermint syrup",
+            "quantity": 1,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "606:2",
+          "quantity": 1,
+          "uid": 275
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 274
+    }
+  ]
+}
+remove the peppermint
+151: ===============================
+{
+  "items": [
+    {
+      "uid": 276,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 276
+    }
+  ]
+}
+add a latte
+152: ===============================
+{
+  "items": [
+    {
+      "uid": 277,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 277
+    }
+  ]
+}
+i'd like a muffin
+153: ===============================
+{
+  "items": [
+    {
+      "uid": 278,
+      "quantity": 1,
+      "key": "2000",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "BakeryProducts",
+        "name": "apple bran muffin",
+        "quantity": 1,
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "2000",
+      "quantity": 1,
+      "uid": 278
+    }
+  ]
+}
+i'd like that warmed
+154: ===============================
+{
+  "items": [
+    {
+      "uid": 279,
+      "quantity": 1,
+      "key": "2000",
+      "children": [
+        {
+          "uid": 280,
+          "quantity": 1,
+          "key": "100",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "BakeryProducts",
+        "name": "apple bran muffin",
+        "quantity": 1,
+        "options": [
+          {
+            "type": "BakeryPreparations",
+            "name": "warmed",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "100",
+          "quantity": 1,
+          "uid": 280
+        }
+      ],
+      "key": "2000",
+      "quantity": 1,
+      "uid": 279
+    }
+  ]
+}
+i'd like a coffee with room for cream
+155: ===============================
+{
+  "items": [
+    {
+      "uid": 281,
+      "quantity": 1,
+      "key": "501:0:2",
+      "children": [
+        {
+          "uid": 282,
+          "quantity": 1,
+          "key": "1102",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "CoffeeDrinks",
+        "name": "dark roast coffee",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "LattePreparations",
+            "name": "with room",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1102",
+          "quantity": 1,
+          "uid": 282
+        }
+      ],
+      "key": "501:0:2",
+      "quantity": 1,
+      "uid": 281
+    }
+  ]
+}
+i'd like a coffee
+156: ===============================
+{
+  "items": [
+    {
+      "uid": 283,
+      "quantity": 1,
+      "key": "501:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "CoffeeDrinks",
+        "name": "dark roast coffee",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "501:0:2",
+      "quantity": 1,
+      "uid": 283
+    }
+  ]
+}
+can you make that with room for cream
+157: ===============================
+{
+  "items": [
+    {
+      "uid": 284,
+      "quantity": 1,
+      "key": "501:0:2",
+      "children": [
+        {
+          "uid": 285,
+          "quantity": 1,
+          "key": "1102",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "CoffeeDrinks",
+        "name": "dark roast coffee",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "LattePreparations",
+            "name": "with room",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1102",
+          "quantity": 1,
+          "uid": 285
+        }
+      ],
+      "key": "501:0:2",
+      "quantity": 1,
+      "uid": 284
+    }
+  ]
+}
+can i get a coffee
+158: ===============================
+{
+  "items": [
+    {
+      "uid": 286,
+      "quantity": 1,
+      "key": "501:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "CoffeeDrinks",
+        "name": "dark roast coffee",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "501:0:2",
+      "quantity": 1,
+      "uid": 286
+    }
+  ]
+}
+can i get room in that coffee
+159: ===============================
+{
+  "items": [
+    {
+      "uid": 287,
+      "quantity": 1,
+      "key": "501:0:2",
+      "children": [
+        {
+          "uid": 288,
+          "quantity": 1,
+          "key": "1102",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "CoffeeDrinks",
+        "name": "dark roast coffee",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "LattePreparations",
+            "name": "with room",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1102",
+          "quantity": 1,
+          "uid": 288
+        }
+      ],
+      "key": "501:0:2",
+      "quantity": 1,
+      "uid": 287
+    }
+  ]
+}
+i want a coffee and an espresso
+160: ===============================
+{
+  "items": [
+    {
+      "uid": 289,
+      "quantity": 1,
+      "key": "501:0:2",
+      "children": []
+    },
+    {
+      "uid": 290,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "CoffeeDrinks",
+        "name": "dark roast coffee",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "501:0:2",
+      "quantity": 1,
+      "uid": 289
+    },
+    {
+      "children": [],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 290
+    }
+  ]
+}
+can i get room in the coffee
+161: ===============================
+{
+  "items": [
+    {
+      "uid": 291,
+      "quantity": 1,
+      "key": "501:0:2",
+      "children": [
+        {
+          "uid": 292,
+          "quantity": 1,
+          "key": "1102",
+          "children": []
+        }
+      ]
+    },
+    {
+      "uid": 293,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "CoffeeDrinks",
+        "name": "dark roast coffee",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "LattePreparations",
+            "name": "with room",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1102",
+          "quantity": 1,
+          "uid": 292
+        }
+      ],
+      "key": "501:0:2",
+      "quantity": 1,
+      "uid": 291
+    },
+    {
+      "children": [],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 293
+    }
+  ]
+}
+add a latte
+162: ===============================
+{
+  "items": [
+    {
+      "uid": 294,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 294
+    }
+  ]
+}
+add an americano
+163: ===============================
+{
+  "items": [
+    {
+      "uid": 295,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    },
+    {
+      "uid": 296,
+      "quantity": 1,
+      "key": "500:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "CoffeeDrinks",
+        "name": "americano",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 295
+    },
+    {
+      "children": [],
+      "key": "500:0:2",
+      "quantity": 1,
+      "uid": 296
+    }
+  ]
+}
+make that to go
+164: ===============================
+{
+  "items": [
+    {
+      "uid": 297,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    },
+    {
+      "uid": 298,
+      "quantity": 1,
+      "key": "500:0:2",
+      "children": [
+        {
+          "uid": 299,
+          "quantity": 1,
+          "key": "1103",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "CoffeeDrinks",
+        "name": "americano",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "LattePreparations",
+            "name": "to go",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 297
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1103",
+          "quantity": 1,
+          "uid": 299
+        }
+      ],
+      "key": "500:0:2",
+      "quantity": 1,
+      "uid": 298
+    }
+  ]
+}
+add a latte
+165: ===============================
+{
+  "items": [
+    {
+      "uid": 300,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 300
+    }
+  ]
+}
+add an americano
+166: ===============================
+{
+  "items": [
+    {
+      "uid": 301,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    },
+    {
+      "uid": 302,
+      "quantity": 1,
+      "key": "500:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "CoffeeDrinks",
+        "name": "americano",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 301
+    },
+    {
+      "children": [],
+      "key": "500:0:2",
+      "quantity": 1,
+      "uid": 302
+    }
+  ]
+}
+make that americano to go
+167: ===============================
+{
+  "items": [
+    {
+      "uid": 303,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    },
+    {
+      "uid": 304,
+      "quantity": 1,
+      "key": "500:0:2",
+      "children": [
+        {
+          "uid": 305,
+          "quantity": 1,
+          "key": "1103",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "CoffeeDrinks",
+        "name": "americano",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "LattePreparations",
+            "name": "to go",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 303
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1103",
+          "quantity": 1,
+          "uid": 305
+        }
+      ],
+      "key": "500:0:2",
+      "quantity": 1,
+      "uid": 304
+    }
+  ]
+}
+add a latte with peppermint
+168: ===============================
+{
+  "items": [
+    {
+      "uid": 306,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 307,
+          "quantity": 1,
+          "key": "606:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Syrups",
+            "name": "peppermint syrup",
+            "quantity": 1,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "606:2",
+          "quantity": 1,
+          "uid": 307
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 306
+    }
+  ]
+}
+make that with extra peppermint
+169: ===============================
+{
+  "items": [
+    {
+      "uid": 308,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 309,
+          "quantity": 1,
+          "key": "606:3",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Syrups",
+            "name": "peppermint syrup",
+            "quantity": 1,
+            "amount": "extra"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "606:3",
+          "quantity": 1,
+          "uid": 309
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 308
+    }
+  ]
+}
+add a nonfat latte and a coffee with half and half
+170: ===============================
+{
+  "items": [
+    {
+      "uid": 310,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 311,
+          "quantity": 1,
+          "key": "803",
+          "children": []
+        }
+      ]
+    },
+    {
+      "uid": 312,
+      "quantity": 1,
+      "key": "501:0:2",
+      "children": [
+        {
+          "uid": 313,
+          "quantity": 1,
+          "key": "909",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Milks",
+            "name": "nonfat milk",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "CoffeeDrinks",
+        "name": "dark roast coffee",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Creamers",
+            "name": "half and half",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "803",
+          "quantity": 1,
+          "uid": 311
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 310
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "909",
+          "quantity": 1,
+          "uid": 313
+        }
+      ],
+      "key": "501:0:2",
+      "quantity": 1,
+      "uid": 312
+    }
+  ]
+}
+add a latte with a lid
+171: ===============================
+{
+  "items": [
+    {
+      "uid": 314,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 315,
+          "quantity": 1,
+          "key": "1101",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "LattePreparations",
+            "name": "lid",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1101",
+          "quantity": 1,
+          "uid": 315
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 314
+    }
+  ]
+}
+make that with a lid
+172: ===============================
+{
+  "items": [
+    {
+      "uid": 316,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 317,
+          "quantity": 1,
+          "key": "1101",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "LattePreparations",
+            "name": "lid",
+            "quantity": 1
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1101",
+          "quantity": 1,
+          "uid": 317
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 316
+    }
+  ]
+}
+add a latte with splenda
+173: ===============================
+{
+  "items": [
+    {
+      "uid": 318,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 319,
+          "quantity": 1,
+          "key": "1202:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Sweeteners",
+            "name": "splenda",
+            "quantity": 1,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1202:2",
+          "quantity": 1,
+          "uid": 319
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 318
+    }
+  ]
+}
+remove the splenda
+174: ===============================
+{
+  "items": [
+    {
+      "uid": 320,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 320
+    }
+  ]
+}
+add a mocha and an iced grande latte with extra foam
+175: ===============================
+{
+  "items": [
+    {
+      "uid": 321,
+      "quantity": 1,
+      "key": "304:0:2",
+      "children": []
+    },
+    {
+      "uid": 322,
+      "quantity": 1,
+      "key": "302:1:2",
+      "children": [
+        {
+          "uid": 323,
+          "quantity": 1,
+          "key": "1001:3",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "mocha",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Toppings",
+            "name": "foam",
+            "quantity": 1,
+            "amount": "extra"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "304:0:2",
+      "quantity": 1,
+      "uid": 321
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1001:3",
+          "quantity": 1,
+          "uid": 323
+        }
+      ],
+      "key": "302:1:2",
+      "quantity": 1,
+      "uid": 322
+    }
+  ]
+}
+make that with no foam
+176: ===============================
+{
+  "items": [
+    {
+      "uid": 324,
+      "quantity": 1,
+      "key": "304:0:2",
+      "children": []
+    },
+    {
+      "uid": 325,
+      "quantity": 1,
+      "key": "302:1:2",
+      "children": [
+        {
+          "uid": 326,
+          "quantity": 1,
+          "key": "1001:0",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "mocha",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Toppings",
+            "name": "foam",
+            "quantity": 1,
+            "amount": "no"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "304:0:2",
+      "quantity": 1,
+      "uid": 324
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1001:0",
+          "quantity": 1,
+          "uid": 326
+        }
+      ],
+      "key": "302:1:2",
+      "quantity": 1,
+      "uid": 325
+    }
+  ]
+}
+add a latte with no foam
+177: ===============================
+{
+  "items": [
+    {
+      "uid": 327,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 328,
+          "quantity": 1,
+          "key": "1001:0",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Toppings",
+            "name": "foam",
+            "quantity": 1,
+            "amount": "no"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1001:0",
+          "quantity": 1,
+          "uid": 328
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 327
+    }
+  ]
+}
+make that with no foam
+178: ===============================
+{
+  "items": [
+    {
+      "uid": 329,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 330,
+          "quantity": 1,
+          "key": "1001:0",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Toppings",
+            "name": "foam",
+            "quantity": 1,
+            "amount": "no"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1001:0",
+          "quantity": 1,
+          "uid": 330
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 329
+    }
+  ]
+}
+i want a short iced latte
+179: ===============================
+{
+  "items": [
+    {
+      "uid": 331,
+      "quantity": 1,
+      "key": "302:1:2",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "grande",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:1:2",
+      "quantity": 1,
+      "uid": 331
+    }
+  ]
+}
+i want a tall iced latte
+180: ===============================
+{
+  "items": [
+    {
+      "uid": 332,
+      "quantity": 1,
+      "key": "302:1:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "iced",
+        "size": "tall",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "302:1:1",
+      "quantity": 1,
+      "uid": 332
+    }
+  ]
+}
+Hi um i'd like a ah a latte with vanilla syrup
+181: ===============================
+{
+  "items": []
+}
++++++
+{
+  "items": []
+}
+---------
+{
+  "items": []
+}
+i'd like a muffin
+182: ===============================
+{
+  "items": [
+    {
+      "uid": 333,
+      "quantity": 1,
+      "key": "2000",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "BakeryProducts",
+        "name": "apple bran muffin",
+        "quantity": 1,
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "2000",
+      "quantity": 1,
+      "uid": 333
+    }
+  ]
+}
+and can you warm the muffin
+183: ===============================
+{
+  "items": []
+}
++++++
+{
+  "items": []
+}
+---------
+{
+  "items": []
+}
+i'd like a muffin
+184: ===============================
+{
+  "items": [
+    {
+      "uid": 334,
+      "quantity": 1,
+      "key": "2000",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "BakeryProducts",
+        "name": "apple bran muffin",
+        "quantity": 1,
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "2000",
+      "quantity": 1,
+      "uid": 334
+    }
+  ]
+}
+warm that
+185: ===============================
+{
+  "items": [
+    {
+      "uid": 335,
+      "quantity": 1,
+      "key": "2000",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "BakeryProducts",
+        "name": "apple bran muffin",
+        "quantity": 1,
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "2000",
+      "quantity": 1,
+      "uid": 335
+    }
+  ]
+}
+add a muffin
+186: ===============================
+{
+  "items": [
+    {
+      "uid": 336,
+      "quantity": 1,
+      "key": "2000",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "BakeryProducts",
+        "name": "apple bran muffin",
+        "quantity": 1,
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "2000",
+      "quantity": 1,
+      "uid": 336
+    }
+  ]
+}
+slice the muffin
+187: ===============================
+{
+  "items": [
+    {
+      "uid": 337,
+      "quantity": 1,
+      "key": "2000",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "BakeryProducts",
+        "name": "apple bran muffin",
+        "quantity": 1,
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [],
+      "key": "2000",
+      "quantity": 1,
+      "uid": 337
+    }
+  ]
+}
+add a double shot latte
+188: ===============================
+{
+  "items": [
+    {
+      "uid": 338,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 339,
+          "quantity": 2,
+          "key": "1206:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Sweeteners",
+            "name": "espresso shot",
+            "quantity": 2,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1206:2",
+          "quantity": 2,
+          "uid": 339
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 338
+    }
+  ]
+}
+add a double latte
+189: ===============================
+{
+  "items": [
+    {
+      "uid": 340,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 341,
+          "quantity": 2,
+          "key": "1206:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Sweeteners",
+            "name": "espresso shot",
+            "quantity": 2,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1206:2",
+          "quantity": 2,
+          "uid": 341
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 340
+    }
+  ]
+}
+add a double espresso
+190: ===============================
+{
+  "items": [
+    {
+      "uid": 342,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 343,
+          "quantity": 2,
+          "key": "1206:2",
+          "children": []
+        }
+      ]
+    },
+    {
+      "uid": 344,
+      "quantity": 1,
+      "key": "400:0:1",
+      "children": []
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Sweeteners",
+            "name": "espresso shot",
+            "quantity": 2,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    {
+      "product": {
+        "type": "EspressoDrinks",
+        "name": "espresso",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "doppio",
+        "options": []
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1206:2",
+          "quantity": 2,
+          "uid": 343
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 342
+    },
+    {
+      "children": [],
+      "key": "400:0:1",
+      "quantity": 1,
+      "uid": 344
+    }
+  ]
+}
+i'll have a coffee one and one
+191: ===============================
+{
+  "items": [
+    {
+      "uid": 345,
+      "quantity": 1,
+      "key": "501:0:2",
+      "children": [
+        {
+          "uid": 346,
+          "quantity": 1,
+          "key": "909",
+          "children": []
+        },
+        {
+          "uid": 347,
+          "quantity": 1,
+          "key": "1203:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "CoffeeDrinks",
+        "name": "dark roast coffee",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Creamers",
+            "name": "half and half",
+            "quantity": 1
+          },
+          {
+            "type": "Sweeteners",
+            "name": "sugar",
+            "quantity": 1,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "909",
+          "quantity": 1,
+          "uid": 346
+        },
+        {
+          "children": [],
+          "key": "1203:2",
+          "quantity": 1,
+          "uid": 347
+        }
+      ],
+      "key": "501:0:2",
+      "quantity": 1,
+      "uid": 345
+    }
+  ]
+}
+add a latte and two extra shot
+192: ===============================
+{
+  "items": [
+    {
+      "uid": 348,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 349,
+          "quantity": 1,
+          "key": "1206:3",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Sweeteners",
+            "name": "espresso shot",
+            "quantity": 1,
+            "amount": "extra"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1206:3",
+          "quantity": 1,
+          "uid": 349
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 348
+    }
+  ]
+}
+add latte with two added shot
+193: ===============================
+{
+  "items": [
+    {
+      "uid": 350,
+      "quantity": 1,
+      "key": "302:0:2",
+      "children": [
+        {
+          "uid": 351,
+          "quantity": 1,
+          "key": "1206:3",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "LatteDrinks",
+        "name": "latte",
+        "quantity": 1,
+        "temperature": "hot",
+        "size": "grande",
+        "options": [
+          {
+            "type": "Sweeteners",
+            "name": "espresso shot",
+            "quantity": 1,
+            "amount": "extra"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1206:3",
+          "quantity": 1,
+          "uid": 351
+        }
+      ],
+      "key": "302:0:2",
+      "quantity": 1,
+      "uid": 350
+    }
+  ]
+}
+add a muffin with butter
+194: ===============================
+{
+  "items": [
+    {
+      "uid": 352,
+      "quantity": 1,
+      "key": "2000",
+      "children": [
+        {
+          "uid": 353,
+          "quantity": 1,
+          "key": "1:2",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "BakeryProducts",
+        "name": "apple bran muffin",
+        "quantity": 1,
+        "options": [
+          {
+            "type": "BakeryOptions",
+            "name": "butter",
+            "quantity": 1,
+            "amount": "regular"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1:2",
+          "quantity": 1,
+          "uid": 353
+        }
+      ],
+      "key": "2000",
+      "quantity": 1,
+      "uid": 352
+    }
+  ]
+}
+make that with extra butter
+195: ===============================
+{
+  "items": [
+    {
+      "uid": 354,
+      "quantity": 1,
+      "key": "2000",
+      "children": [
+        {
+          "uid": 355,
+          "quantity": 1,
+          "key": "1:2",
+          "children": []
+        },
+        {
+          "uid": 356,
+          "quantity": 1,
+          "key": "1:3",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
++++++
+{
+  "items": [
+    {
+      "product": {
+        "type": "BakeryProducts",
+        "name": "apple bran muffin",
+        "quantity": 1,
+        "options": [
+          {
+            "type": "BakeryOptions",
+            "name": "butter",
+            "quantity": 1,
+            "amount": "regular"
+          },
+          {
+            "type": "BakeryOptions",
+            "name": "butter",
+            "quantity": 1,
+            "amount": "extra"
+          }
+        ]
+      },
+      "quantity": 1
+    }
+  ]
+}
+---------
+{
+  "items": [
+    {
+      "children": [
+        {
+          "children": [],
+          "key": "1:2",
+          "quantity": 1,
+          "uid": 355
+        },
+        {
+          "children": [],
+          "key": "1:3",
+          "quantity": 1,
+          "uid": 356
+        }
+      ],
+      "key": "2000",
+      "quantity": 1,
+      "uid": 354
+    }
+  ]
+}
+---------------------------------------
+Repair algorithm: menu-based
+Total test cases: 119
+Total steps: 196
+Perfect carts: 196/196 (100.0%)
+Complete carts: 196/196 (100.0%)
+Repaired carts: 0/196 (0.0%)
+Total repairs: 0
+Repairs/Step: 0.00
+ 
+Case pass rate by suite:
+  add: 35/35
+  ambiguous: 3/3
+  bug: 14/14
+  complex: 1/1
+  disfluencies: 2/2
+  exclusive: 1/1
+  extras: 33/33
+  illegal-option: 2/2
+  implicit: 18/18
+  modify: 41/41
+  multiple: 6/6
+  not-implemented: 6/6
+  option-as-verb: 3/3
+  overloaded: 1/1
+  placeholder: 1/1
+  recipes: 3/3
+  regression: 96/96
+  remove: 12/12
+  replace: 7/7
+  spec-issue: 1/1
+  
+  Total failed cases: 0
+  Overall pass rate: 119/119 (1.000)
+---------------------------------------
+
+
+Running time: 18.7101ms

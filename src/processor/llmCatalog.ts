@@ -7,6 +7,28 @@ import {
   loadCatalogFile,
 } from 'prix-fixe';
 
+/*
+PrixFixe to LLM
+
+Break Key into PID and AIDs
+Get generic id from PID
+Lookup Product by PID
+
+To generate TS source code:
+  Mqp from dimension name to property name
+
+To translate from PrixFix to LLM
+  Map from PID/generic name to group name
+  Map from dimension name to property name
+
+To translate from LLM to PrixFix
+  Map from dimensions name to property name
+    Use to get attribute values to prepend to generic name to get specific name
+    Current code gets this wrong - it uses the attribute names instead of values
+    LLMToPrixFixe.convertSpecific()
+
+*/
+
 interface Product {
   pid: number;
   name: string;
@@ -21,6 +43,8 @@ interface Product {
 export function createLLMProducts(dataPath: string): {
   catalog: CatalogSpec;
   nameToProduct: Map<string, Product>;
+  // tagToGenericNames: Map<string, string[]>;
+  genericNameToTag: Map<string, string>;
 } {
   // const dataPath = 'samples/menu';
   const catalog = loadCatalogFile(path.join(dataPath, 'menu.yaml'));
@@ -75,7 +99,35 @@ export function createLLMProducts(dataPath: string): {
     }
   }
 
-  return {catalog, nameToProduct};
+  // Build map from generic name to group name.
+  const genericNameToTag = new Map<string, string>();
+  for (const [tag, products] of tagToProductSet.entries()) {
+    const t2 = toTypeName(tag);
+    for (const product of products) {
+      for (const name of product.values) {
+        genericNameToTag.set(name, t2);
+      }
+    }
+  }
+  // const tagToGenericNames = new Map<string, string[]>();
+  // for (const [tag, products] of tagToProductSet.entries()) {
+  //   const names: string[] = [];
+  //   for (const product of products) {
+  //     for (const name of product.values) {
+  //       names.push(name);
+  //     }
+  //   }
+  //   tagToGenericNames.set(toTypeName(tag), names);
+  // }
+
+  return {catalog, nameToProduct, genericNameToTag};
+}
+
+function toTypeName(name: string) {
+  return name
+    .split(/[-_]/)
+    .map(x => x[0].toUpperCase() + x.slice(1))
+    .join('');
 }
 
 function* generateProducts(
