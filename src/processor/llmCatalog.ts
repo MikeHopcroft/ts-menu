@@ -1,7 +1,8 @@
 import path from 'path';
+
 import {
   CatalogSpec,
-  DimensionSpec,
+  // DimensionSpec,
   GroupSpec,
   ItemSpec,
   loadCatalogFile,

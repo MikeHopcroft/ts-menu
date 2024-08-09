@@ -7,11 +7,11 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "generate-type-script",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/build/src/index.js",
+            "program": "${workspaceFolder}/build/src/apps/genereate-type-script.js",
             "preLaunchTask": "tsc: build - tsconfig.json",
             "outFiles": [
                 "${workspaceFolder}/build/**/*.js"
@@ -20,11 +20,11 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "processor",
+            "name": "convert-test-suite",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/build/src/processor/main.js",
+            "program": "${workspaceFolder}/build/src/apps/convert-test-suite.js",
             "args": ["-d", "samples/menu", "samples/tests/baseline.yaml"],
             "preLaunchTask": "tsc: build - tsconfig.json",
             "outFiles": [

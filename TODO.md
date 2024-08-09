@@ -1,3 +1,18 @@
+Python ML Project TODO
+
+* Remove `type` from `Product`
+* Make Cart.items be an array of `Product`.
+* Move `quantity` into `Product`.
+  * QUESTION: will this cause too many repetitions of `quantity`?
+* Regenerate TS type definitions
+* Regenerate JSON schema
+* Convert regression tests to new format (PrixFixeToLLM)
+* Update LLMToPrixFixe
+* Emit mapping from Product.name to default object.
+* Write some documentation for this branch
+
+-------------------------------------------------
+
 * Name for LLMCart
 * Translate
   * prix-fixe Cart => LLMCart

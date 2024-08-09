@@ -16,8 +16,8 @@ import {
   World,
 } from 'prix-fixe';
 
-import {LLMToPrixFixe, PrixFixeToLLM} from './llmToPrixFixe';
-import {createLLMProducts} from './llmCatalog';
+import {LLMToPrixFixe, PrixFixeToLLM} from '../processor/llmToPrixFixe';
+import {createLLMProducts} from '../processor/llmCatalog';
 // import {Cart as LLMCart} from './menu';
 
 // This sample application demonstrates how to configure the test runner
@@ -66,6 +66,9 @@ function createCheatProcessorFactory(
         throw new Error('Ran out of states');
       }
       const s = expected.value;
+
+      // Round-trip the expected cart by converting to LLM format
+      // and then back to prix-fixe format.
       const llmCart = converter.convertCart(s.cart);
       const pfCart = converter2.convertCart(llmCart);
 

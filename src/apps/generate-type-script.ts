@@ -268,13 +268,13 @@ function validateProduct(
   // mutual exclusivity
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-function verifyField(
-  obj: any,
-  name: string,
-  type: string,
-  diagnostics: Diagnostics
-) {}
+// // eslint-disable-next-line @typescript-eslint/no-unused-vars
+// function verifyField(
+//   obj: any,
+//   name: string,
+//   type: string,
+//   diagnostics: Diagnostics
+// ) {}
 
 ///////////////////////////////////////////////////////////////////////////////
 //
@@ -556,10 +556,12 @@ function go() {
 
   formatInterfaces(catalog, nameToProduct);
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   for (const [name, product] of nameToProduct.entries()) {
     console.log(`${product.values.join(', ')} => ${product.name}`);
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const table = [...nameToProduct.entries()].map(([name, product]) => [
     product.name,
     product.values,
