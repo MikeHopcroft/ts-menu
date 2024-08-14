@@ -10,6 +10,7 @@
   "license": "Apache-2.0",
   "keywords": [],
   "scripts": {
+    "diags": "tsc --extendedDiagnostics --listFilesOnly",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "gts lint",
     "clean": "gts clean",
