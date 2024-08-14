@@ -46,6 +46,7 @@ export function createLLMProducts(dataPath: string): {
   nameToProduct: Map<string, Product>;
   // tagToGenericNames: Map<string, string[]>;
   genericNameToTag: Map<string, string>;
+  tagToAttributeNames: Map<string, string[]>;
 } {
   // const dataPath = 'samples/menu';
   const catalog = loadCatalogFile(path.join(dataPath, 'menu.yaml'));
@@ -110,6 +111,27 @@ export function createLLMProducts(dataPath: string): {
       }
     }
   }
+
+  // Build map from tag to attribute names
+  // const tagToAttributeNames: Record<string, string[]> = {};
+  const tagToAttributeNames = new Map<string, string[]>();
+  const empty: string[] = [];
+  // for (const [tag, products] of tagToProductSet.entries()) {
+  //   const dimensions = new Set();
+  //   for (const product of products) {
+  //     // Ensure we're using the same [] object for all empty dimension lists.
+  //     const d = product.dimensions.length === 0 ? empty : product.dimensions;
+  //     dimensions.add(d);
+  //   }
+  //   if (dimensions.size > 1) {
+  //     throw new Error(`${tag} has products with different dimensions.`);
+  //   }
+  //   if (dimensions.size === 0) {
+  //     throw new Error(`${tag} has no products.`);
+  //   }
+  //   tagToAttributeNames.set(tag, dimensions.values().next().value);
+  // }
+
   // const tagToGenericNames = new Map<string, string[]>();
   // for (const [tag, products] of tagToProductSet.entries()) {
   //   const names: string[] = [];
@@ -121,7 +143,7 @@ export function createLLMProducts(dataPath: string): {
   //   tagToGenericNames.set(toTypeName(tag), names);
   // }
 
-  return {catalog, nameToProduct, genericNameToTag};
+  return {catalog, nameToProduct, genericNameToTag, tagToAttributeNames};
 }
 
 function toTypeName(name: string) {

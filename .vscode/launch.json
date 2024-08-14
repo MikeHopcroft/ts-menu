@@ -20,6 +20,19 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "generate-python",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/build/src/apps/generate-python.js",
+            "preLaunchTask": "tsc: build - tsconfig.json",
+            "outFiles": [
+                "${workspaceFolder}/build/**/*.js"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "convert-test-suite",
             "skipFiles": [
                 "<node_internals>/**"
