@@ -1,0 +1,343 @@
+{
+  "apple bran muffin": {
+    "name": "apple bran muffin",
+    "quantity": 1
+  },
+  "blueberry muffin": {
+    "name": "blueberry muffin",
+    "quantity": 1
+  },
+  "lemon poppyseed muffin": {
+    "name": "lemon poppyseed muffin",
+    "quantity": 1
+  },
+  "butter": {
+    "name": "butter",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "strawberry jam": {
+    "name": "strawberry jam",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "warmed": {
+    "name": "warmed",
+    "quantity": 1
+  },
+  "cut in half": {
+    "name": "cut in half",
+    "quantity": 1
+  },
+  "cappuccino": {
+    "name": "cappuccino",
+    "temperature": "hot",
+    "size": "grande",
+    "quantity": 1
+  },
+  "flat white": {
+    "name": "flat white",
+    "temperature": "hot",
+    "size": "grande",
+    "quantity": 1
+  },
+  "latte": {
+    "name": "latte",
+    "temperature": "hot",
+    "size": "grande",
+    "quantity": 1
+  },
+  "latte macchiato": {
+    "name": "latte macchiato",
+    "temperature": "hot",
+    "size": "grande",
+    "quantity": 1
+  },
+  "mocha": {
+    "name": "mocha",
+    "temperature": "hot",
+    "size": "grande",
+    "quantity": 1
+  },
+  "chai latte": {
+    "name": "chai latte",
+    "temperature": "hot",
+    "size": "grande",
+    "quantity": 1
+  },
+  "espresso": {
+    "name": "espresso",
+    "temperature": "hot",
+    "size": "doppio",
+    "quantity": 1
+  },
+  "lungo": {
+    "name": "lungo",
+    "temperature": "hot",
+    "size": "doppio",
+    "quantity": 1
+  },
+  "ristretto": {
+    "name": "ristretto",
+    "temperature": "hot",
+    "size": "doppio",
+    "quantity": 1
+  },
+  "macchiato": {
+    "name": "macchiato",
+    "temperature": "hot",
+    "size": "doppio",
+    "quantity": 1
+  },
+  "americano": {
+    "name": "americano",
+    "temperature": "hot",
+    "size": "grande",
+    "quantity": 1
+  },
+  "dark roast coffee": {
+    "name": "dark roast coffee",
+    "temperature": "hot",
+    "size": "grande",
+    "quantity": 1
+  },
+  "almond syrup": {
+    "name": "almond syrup",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "buttered rum syrup": {
+    "name": "buttered rum syrup",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "caramel syrup": {
+    "name": "caramel syrup",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "cinnamon syrup": {
+    "name": "cinnamon syrup",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "hazelnut syrup": {
+    "name": "hazelnut syrup",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "orange syrup": {
+    "name": "orange syrup",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "peppermint syrup": {
+    "name": "peppermint syrup",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "raspberry syrup": {
+    "name": "raspberry syrup",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "toffee syrup": {
+    "name": "toffee syrup",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "vanilla syrup": {
+    "name": "vanilla syrup",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "regular": {
+    "name": "regular",
+    "quantity": 1
+  },
+  "two thirds caf": {
+    "name": "two thirds caf",
+    "quantity": 1
+  },
+  "half caf": {
+    "name": "half caf",
+    "quantity": 1
+  },
+  "one third caf": {
+    "name": "one third caf",
+    "quantity": 1
+  },
+  "decaf": {
+    "name": "decaf",
+    "quantity": 1
+  },
+  "whole milk": {
+    "name": "whole milk",
+    "quantity": 1
+  },
+  "two percent milk": {
+    "name": "two percent milk",
+    "quantity": 1
+  },
+  "one percent milk": {
+    "name": "one percent milk",
+    "quantity": 1
+  },
+  "nonfat milk": {
+    "name": "nonfat milk",
+    "quantity": 1
+  },
+  "coconut milk": {
+    "name": "coconut milk",
+    "quantity": 1
+  },
+  "soy milk": {
+    "name": "soy milk",
+    "quantity": 1
+  },
+  "almond milk": {
+    "name": "almond milk",
+    "quantity": 1
+  },
+  "oat milk": {
+    "name": "oat milk",
+    "quantity": 1
+  },
+  "eggnog": {
+    "name": "eggnog",
+    "quantity": 1
+  },
+  "whole milk creamer": {
+    "name": "whole milk creamer",
+    "quantity": 1
+  },
+  "two percent milk creamer": {
+    "name": "two percent milk creamer",
+    "quantity": 1
+  },
+  "one percent milk creamer": {
+    "name": "one percent milk creamer",
+    "quantity": 1
+  },
+  "nonfat milk creamer": {
+    "name": "nonfat milk creamer",
+    "quantity": 1
+  },
+  "coconut milk creamer": {
+    "name": "coconut milk creamer",
+    "quantity": 1
+  },
+  "soy milk creamer": {
+    "name": "soy milk creamer",
+    "quantity": 1
+  },
+  "almond milk creamer": {
+    "name": "almond milk creamer",
+    "quantity": 1
+  },
+  "oat milk creamer": {
+    "name": "oat milk creamer",
+    "quantity": 1
+  },
+  "eggnog creamer": {
+    "name": "eggnog creamer",
+    "quantity": 1
+  },
+  "half and half": {
+    "name": "half and half",
+    "quantity": 1
+  },
+  "heavy cream": {
+    "name": "heavy cream",
+    "quantity": 1
+  },
+  "cinnamon": {
+    "name": "cinnamon",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "foam": {
+    "name": "foam",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "ice": {
+    "name": "ice",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "nutmeg": {
+    "name": "nutmeg",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "whipped cream": {
+    "name": "whipped cream",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "water": {
+    "name": "water",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "for here cup": {
+    "name": "for here cup",
+    "quantity": 1
+  },
+  "lid": {
+    "name": "lid",
+    "quantity": 1
+  },
+  "with room": {
+    "name": "with room",
+    "quantity": 1
+  },
+  "to go": {
+    "name": "to go",
+    "quantity": 1
+  },
+  "dry": {
+    "name": "dry",
+    "quantity": 1
+  },
+  "wet": {
+    "name": "wet",
+    "quantity": 1
+  },
+  "equal": {
+    "name": "equal",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "honey": {
+    "name": "honey",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "splenda": {
+    "name": "splenda",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "sugar": {
+    "name": "sugar",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "sugar in the raw": {
+    "name": "sugar in the raw",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "sweet n low": {
+    "name": "sweet n low",
+    "amount": "regular",
+    "quantity": 1
+  },
+  "espresso shot": {
+    "name": "espresso shot",
+    "amount": "regular",
+    "quantity": 1
+  }
+}
