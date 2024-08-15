@@ -1,9 +1,21 @@
 import {createWorld, LogicalValidationSuite, TextTurn} from 'prix-fixe';
 
 import {createLLMProducts} from './llmCatalog';
-import {PrixFixeToLLM, PythonItem, PythonTestSuite} from './prefixe-to-json';
+import {PrixFixeToLLM} from './prefixe-to-json';
 import {PrixFixeToTS} from './prefixe-to-typescript';
+import {PythonItem, PythonTestSuite} from './python-test-suite';
 
+///////////////////////////////////////////////////////////////////////////////
+//
+// Converter
+//
+// In the context of a given prix-fixe menu,
+//
+//   * Generates mapping from product name to default configuration.
+//   * Generates Typescript interface definitions for menu.
+//   * Converts prix-fixe test suite to form suitable for use with LLMs.
+//
+///////////////////////////////////////////////////////////////////////////////
 export class Converter {
   prixFixeToLLM: PrixFixeToLLM;
   prixFixeToTS: PrixFixeToTS;

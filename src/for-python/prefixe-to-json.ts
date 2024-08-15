@@ -8,37 +8,12 @@ import pf, {
 } from 'prix-fixe';
 
 import {Product} from './llmCatalog';
-
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-// type Item = Record<string, any>;
-// import {Item} from './menu-python';
-
-export interface PythonTestSuite {
-  cases: PythonTestCase[];
-}
-
-interface PythonTestCase {
-  turns: PythonTestTurn[];
-}
-
-interface PythonTestTurn {
-  query: string;
-  expected: PythonCart;
-}
-
-interface PythonCart {
-  items: PythonItem[];
-}
-
-export type PythonItem = {
-  name: string;
-  quantity: number;
-  options?: PythonItem[];
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-} & Record<string, any>;
-
-// TODO: eliminate Item?
-type Item = PythonItem;
+import {
+  PythonCart,
+  PythonItem,
+  PythonTestCase,
+  PythonTestSuite,
+} from './python-test-suite';
 
 export class PrixFixeToLLM {
   world: pf.World;
@@ -69,8 +44,8 @@ export class PrixFixeToLLM {
     this.convertTestCase = this.convertTestCase.bind(this);
   }
 
-  createDefaults(): Record<string, Item> {
-    const nameToDefault: Record<string, Item> = {};
+  createDefaults(): Record<string, PythonItem> {
+    const nameToDefault: Record<string, PythonItem> = {};
     for (const g of this.catalog.genericEntities()) {
       const item = {...this.itemFromKey(g.defaultKey), quantity: 1};
       nameToDefault[g.name] = item;
@@ -99,7 +74,7 @@ export class PrixFixeToLLM {
     return {items: pfCart.items.map(this.convertItem)};
   }
 
-  private convertItem(pfItem: pf.ItemInstance): Item {
+  private convertItem(pfItem: pf.ItemInstance): PythonItem {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const item: Record<string, any> = {
       ...this.itemFromKey(pfItem.key),
@@ -110,10 +85,10 @@ export class PrixFixeToLLM {
       const options = pfItem.children.map(this.convertItem);
       item.options = options;
     }
-    return item as Item;
+    return item as PythonItem;
   }
 
-  private itemFromKey(key: string): Item {
+  private itemFromKey(key: string): PythonItem {
     const generic = this.catalog.getGenericForKey(key);
     const type = this.genericNameToTag.get(generic.name);
     if (type === undefined) {
@@ -139,7 +114,7 @@ export class PrixFixeToLLM {
       item[property] = value;
     }
 
-    return item as Item;
+    return item as PythonItem;
   }
 }
 
